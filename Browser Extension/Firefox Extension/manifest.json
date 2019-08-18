@@ -1,0 +1,38 @@
+{
+    "manifest_version": 2,
+    "name": "WebSec WebSecurity",
+    "version": "0.1",
+    "description": "This extension is part of Websec WebSecurity: A complete web security suite",
+    "icons":{
+        "32": "icons/WebSecLogo32x32.png"
+    },
+
+    "permissions": [
+        "tabs",
+        "activeTab",
+        "webRequest",
+        "webRequestBlocking",
+        "<all_urls>"
+      ],
+
+    "browser_action":{
+        "default_icon":{
+            "32": "icons/WebSecLogo32x32.png"
+        },
+        "default_popup": "html/popup.html"
+    },
+
+    "content_scripts": [
+        {
+          "matches": ["<all_urls>"],
+          "js": ["getLinks.js"]
+        }
+    ],
+
+    "background":{
+        "scripts":["getUrl.js"]
+    }
+
+}
+
+
