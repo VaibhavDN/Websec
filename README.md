@@ -19,3 +19,5 @@ Working: Extension redirects user to "dummySite.html" whenever he trys to go to 
 search request using a search engine.
 
 Changes in directory: Browser Extension/Firefox Extension/
+
+******************************************
