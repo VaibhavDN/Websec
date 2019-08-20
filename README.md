@@ -36,7 +36,7 @@ Aug 20, 2019
 
 Vaibhav:
 
-Added: Scrapper + HTML Parser
+Added: Scraper + HTML Parser
 
 Working: Scrapper uses selenium and Beautiful Soup is used for HTML Parsing. This script reads all the links in TrainSites.txt / TestSites.txt then performs scraping and parsing and then makes a folder for each site it scraps. 
 
