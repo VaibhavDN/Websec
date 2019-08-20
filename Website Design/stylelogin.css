@@ -1,0 +1,90 @@
+body
+{
+	background-image: url('art-backdrop-background-1985172.jpg');
+	background-size: cover;
+	margin:0;
+	padding: 0;
+}
+.log_head
+{
+	font-family: sans-serif;
+	font-size: 35px;
+	color: #0086b3;
+	top: 30px;
+	left: 280px;
+	position: absolute;
+}
+.logform
+{
+	height: 350px;
+	width: 400px;
+	top: 15%;
+	left: 33%;
+	position: absolute;
+	background-color: #ffffe6;
+}
+#logusname
+{
+	font-family: sans-serif;
+	font-size: 22px;
+	color: #00b300;
+	left: 35%;
+	position: relative; 
+
+}
+#logpass
+{
+	font-family: sans-serif;
+	font-size: 22px;
+	color: #00b300;
+	left: 35%;
+	position: relative; 
+
+}
+input
+{
+	width: 100%;
+	border:0;
+	border-bottom: 2px solid #ff9900;
+	text-align: center;
+	color:  #005c99;
+	font-size: 22px;
+	background:transparent;
+	outline: none;
+}
+#logbutton
+{
+	top: 65px;
+	left: 38%;
+	position: relative;
+	background-color:  #ffcc00;
+	border-radius: 35px;
+	font-family: sans-serif;
+	font-size:25px; 
+	color: #990099;
+}
+.back
+{
+	left:30%;
+	top:61%;
+	position: absolute;
+	background-color:#ccccff;
+	width: 520px;
+	height: 100px; 
+	font-family: sans-serif;
+	font-size: 25px;
+	color: #cc0066;
+	text-align: center;
+
+}
+#logbutton1
+{
+	
+	
+	position: relative;
+	background-color: #ffcc00;
+	border-radius: 35px;
+	font-family: sans-serif;
+	font-size:30px; 
+	color: #990099;
+}
