@@ -84,3 +84,23 @@ Numberwise,scraped content is less, but there is enough news within each column 
   
   *********************************************
 
+Aug 26, 2019
+
+Milind
+LV 0.01
+
+Added scrapped data of movie sites alongwith its designated scrapper in folder 'Movie_site_scrapper'.
+Extract/Clone into C drive for flawless compaitability.
+
+Data addition :-
+  1. Movie_site_scrapper/mv_db -> Contains scrapped text data from user interactive tags of movie sites
+  2. Movie_site_scrapper/mv_db_keywords -> Contains processed token keywords extracted from 'mv_db' data
+  3. Movie_site_scrapper/mvdb.txt -> Contains all active url to movie sites used by the code
+  4. Movie_site_scrapper/mvdb_o.txt -> Contains all url to movie sites regardless of their accesibility , superset of mvdb.txt
+  
+Code addition :-
+  1. Movie_site_scrapper/site_scrapper.py -> Scraps sites and keeps mvdb.txt error free. Uses 'requests' amd 'BS4'
+  2. Movie_site_scrapper/tknz.py -> Processes and tokenizes data from mv_db folder 
+  3. Movie_site_scrapper/link_copy.py -> Copies link from mvdb_o.txt to mvdb.txt to be reloaded
+  
+ (PS:- Manual link hunting is cumbersome , somebody should automate it)
