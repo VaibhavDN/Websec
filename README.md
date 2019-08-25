@@ -53,3 +53,13 @@ Made folder contains following files:
 5. Sites Link
 
 **********************************************
+
+Aug 25,2019
+
+Anubhav
+
+Added: Scraped Content of 20 Tech Blog Websites for Classification.
+Numberwise,scraped content is less, but there is enough news within each column to particularly cover every aspect. Also, ignore tags like <n> or <t> as they would be removed during pre-processing.
+  On may way to make final csv file to perform machine learning but before that need to scrap some other categories of blog to so that model is not overfitted.
+  
+  *********************************************
