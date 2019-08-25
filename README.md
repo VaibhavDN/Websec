@@ -63,3 +63,24 @@ Numberwise,scraped content is less, but there is enough news within each column 
   On may way to make final csv file to perform machine learning but before that need to scrap some other categories of blog to so that model is not overfitted.
   
   *********************************************
+  
+  Aug 26,2019
+  
+  Vaibhav
+  
+  Added:
+  
+  1. Model to classify game sites (XGBoost). [/Models/Gaming Sites/]
+  
+  2. Django server to handle captured links from websites and run models on them. [/Server/WebsecServer/]
+  
+  3. Dataset made from scraped gaming sites. [/Gaming Dataset/]
+  
+  4. Firefox browser extension to capture and send links to server. [/Browser Extension/Firefox Extension/Send Links to Server/]
+  
+  Improvement:
+  
+  1. HTMLParser now first uses requests to fetch HTML and switches to selenium if websites detect the first approach as bot. [/HTML Parser/]
+  
+  *********************************************
+
