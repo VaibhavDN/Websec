@@ -121,4 +121,4 @@ Code addition :-
  4. Click on load unpacked and select the folder 'chrome_extension'(after getting cloned from repo) from your filesystem.
  5. Start testing.
  
-    **********************************************
+   ***********************************************
