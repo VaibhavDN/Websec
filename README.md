@@ -104,3 +104,21 @@ Code addition :-
   3. Movie_site_scrapper/link_copy.py -> Copies link from mvdb_o.txt to mvdb.txt to be reloaded
   
  (PS:- Manual link hunting is cumbersome , somebody should automate it)
+ 
+   *********************************************
+ Aug 28, 2019
+ 
+ Milind
+ LV 0.02
+ 
+ Added inital prototype of Layer 1 , games and movie sites incorporated.
+ Starting results are encouraging.
+ 
+ To test:-
+ 1. Download Chrome
+ 2. Enter 'chrome://extensions' in address bar of browser
+ 3. Enable developer mode
+ 4. Click on load unpacked and select the folder 'chrome_extension'(after getting cloned from repo) from your filesystem.
+ 5. Start testing.
+ 
+    **********************************************
