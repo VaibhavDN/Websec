@@ -131,3 +131,16 @@ Code addition :-
    2)Only text data related to the socialmedia website is scraped.
    3)All scraped data is stored in different files so that they can used for applying models.
    
+***********************************************
+
+Sep 1,2019
+
+Vaibhav:
+
+1. Added shopping sites dataset and trained model.
+
+2. Major changes to extension's getUrl_v2 (V1 is stable).
+
+3. Minor changes to HTMLParser.
+
+***********************************************
