@@ -8,7 +8,7 @@ function sendToServer(requestDetails) {
     var lastElementSplit = lastElement.split(".");
     console.log("Last element: "+lastElementSplit);
     var skip=0;
-    if(extensions.indexOf(lastElementSplit[lastElementSplit.length-1]) != -1)
+    if(extensions.indexOf(lastElementSplit[lastElementSplit.length-1]) != -1 || url.length > 100)
     {
         skip = 1;
         console.log("*********Skipped************");

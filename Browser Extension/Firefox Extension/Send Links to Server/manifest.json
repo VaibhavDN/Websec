@@ -31,7 +31,7 @@
     ],
 
     "background":{
-        "scripts":["getUrl_v2.js"]
+        "scripts":["getUrl.js"]
     }
 
 }
