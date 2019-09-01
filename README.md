@@ -123,8 +123,11 @@ Code addition :-
  
    ***********************************************
    September 1,2019
+   
+   
    Parth
-   Scraped social media sites using BeautifulSoup and Resquests.
-   Only text data related to the socialmedia website is scraped.
-   All scraped data is stored in different files so that they can used for applying models.
+   
+   1)Scraped social media sites using BeautifulSoup and Resquests.
+   2)Only text data related to the socialmedia website is scraped.
+   3)All scraped data is stored in different files so that they can used for applying models.
    
