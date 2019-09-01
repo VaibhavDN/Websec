@@ -13,6 +13,8 @@ def getLink(request):
 
     if 'link' in request.GET:
         link = request.GET['link']
+    else:
+        print("Link not found")
     
     testSitesPath = pathToModels + '/' + "TestSites.txt" 
     fobject = open(testSitesPath, "w")

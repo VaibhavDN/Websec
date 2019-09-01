@@ -12,6 +12,7 @@
         "activeTab",
         "webRequest",
         "webRequestBlocking",
+        "notifications",
         "<all_urls>"
       ],
 
@@ -30,7 +31,7 @@
     ],
 
     "background":{
-        "scripts":["getUrl.js"]
+        "scripts":["getUrl_v2.js"]
     }
 
 }
