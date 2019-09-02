@@ -144,3 +144,11 @@ Vaibhav:
 3. Minor changes to HTMLParser.
 
 ***********************************************
+
+Sep 1,2019
+
+Anubhav:
+
+1. Scraped webpges of Adult Websites, Bollywood Blogs.
+2.A Corresponding Model using Tfidf approach and Logistic Regression was created.
+3.The Model was deployed on to the flask server.
