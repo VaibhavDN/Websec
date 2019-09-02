@@ -1,0 +1,17 @@
+{
+    "name": "L1",
+    "version": "0.01",
+    "description": "Layer 1 concept",
+    "background": {
+      "scripts": ["start1.js"],
+      "persistent": true
+    },
+    "manifest_version": 2,
+    "permissions":[
+      "<all_urls>",
+      "webRequest",
+      "webRequestBlocking",
+      "downloads",
+      "webNavigation"
+    ]
+  }

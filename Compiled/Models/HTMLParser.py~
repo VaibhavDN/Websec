@@ -1,31 +1,27 @@
 from selenium import webdriver
 from bs4 import BeautifulSoup, Comment
-import os, shutil
+import os
 from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
 from nltk import pos_tag
-from importlib.machinery import SourceFileLoader
-import requests
+#import Model_run
 #import isGameSite
 
-def startParser(pathToModels, option):
+
+def startParser():
     #***************Housekeeping*****************
     fobject = open("score.txt", "w")  # Emptying the score file
     fobject.close()
     #********************************************
 
-    testingFolder = pathToModels + '/' + "Testing"
-    if(os.path.isdir(testingFolder)):
-        shutil.rmtree(testingFolder)
-
     folder = ""
-    #option = int(input("Choose:\n1. TrainSites.txt\n2. TestSites.txt: "))
+    option = int(input("Choose:\n1. TrainSites.txt\n2. TestSites.txt: "))
     if option == 1:
-        fobjectLinks = open(pathToModels + '/' + "TrainSites.txt", "r")
-        folder = pathToModels + '/' + "Training"
+        fobjectLinks = open("TrainSites.txt", "r")
+        folder = "TrainSites"
     else:
-        fobjectLinks = open(pathToModels + '/' + "TestSites.txt", "r")
-        folder = pathToModels + '/' + "Testing"
+        fobjectLinks = open("TestSites.txt", "r")
+        folder = "Testing"
 
     if not os.path.exists(folder):
         os.makedirs(folder)
@@ -40,46 +36,24 @@ def startParser(pathToModels, option):
         finalDomain = hostname[2].replace('.', '_')
         print(finalDomain)
 
+        try:
+            driver = webdriver.Firefox()
+            driver.get(inputLink)
+            print(driver.title + '\n')
+            html = driver.page_source
+            driver.close()
+            soup = BeautifulSoup(html, 'lxml')
+
+            # Extract entire body's content
+            bodyContent = soup.body
+            # print(bodyContent)
+        except Exception as e:
+            print("Error: " + str(e))
+
         # Make new directory if it doesn't exist.
         dirName = folder + "/" + finalDomain
         if not os.path.exists(dirName):
             os.makedirs(dirName)
-
-#*******Requests**********
-#! *******************************************************    
-        try:    
-            html = requests.get(inputLink).text
-            soup = BeautifulSoup(html, 'lxml')
-            bodyContent = soup.body
-            # Remove all script and style elements
-            for script in bodyContent(["script", "style"]):
-                script.decompose()
-            bodyContentTxt = bodyContent.get_text()
-            bodyContentStr = str(bodyContentTxt)
-            bodyWithoutSpaces = bodyContentStr.replace(" ","")
-            bodyWithoutSpaces = bodyContentStr.replace("\n","")
-            bodyContentLength = len(bodyWithoutSpaces)
-            print(bodyWithoutSpaces)
-            print(bodyContentLength)
-        except Exception as e:
-            print("Exception: " + str(e))
-            return 0
-#! ******************************************************* 
-#********Selenium**********
-        if(bodyContentLength<1000):
-            print("************Running selenium**************")
-            try:
-                driver = webdriver.Firefox()
-                driver.get(inputLink)
-                print(driver.title + '\n')
-                html = driver.page_source
-                driver.close()
-                soup = BeautifulSoup(html, 'lxml')
-                # Extract entire body's content
-                bodyContent = soup.body
-                # print(bodyContent)
-            except Exception as e:
-                print("Error: " + str(e))
 
         # Write the sites link in a file
         try:
@@ -94,7 +68,7 @@ def startParser(pathToModels, option):
             scripts = soup.find_all('script')
             fobject = open(dirName+"/"+finalDomain+"_scripts.txt", "w")
             for i in range(0, len(scripts)):
-                fobject.write(str(scripts[i].get("src"))+"\n")
+                fobject.write(str(scripts[i])+"\n")
             fobject.close()
         except Exception as e:
             print("Error: " + str(e))
@@ -176,6 +150,5 @@ def startParser(pathToModels, option):
                 print(e)
         '''
     fobjectLinks.close()
-    makeDataset = SourceFileLoader("DatasetMakerModule", pathToModels + '/' + "MakeGamingDataset.py").load_module()
-    prediction = makeDataset.makeGamingDataset(pathToModels, option)
-    return prediction
+
+# Model_run.runModel()

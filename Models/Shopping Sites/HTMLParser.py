@@ -9,11 +9,6 @@ import requests
 #import isGameSite
 
 def startParser(pathToModels, option):
-    #***************Housekeeping*****************
-    fobject = open("score.txt", "w")  # Emptying the score file
-    fobject.close()
-    #********************************************
-
     testingFolder = pathToModels + '/' + "Testing"
     if(os.path.isdir(testingFolder)):
         shutil.rmtree(testingFolder)
@@ -47,8 +42,9 @@ def startParser(pathToModels, option):
 
 #*******Requests**********
 #! *******************************************************    
-        try:    
-            html = requests.get(inputLink).text
+        try:
+            headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0'}
+            html = requests.get(inputLink, headers=headers).text
             soup = BeautifulSoup(html, 'lxml')
             bodyContent = soup.body
             # Remove all script and style elements
@@ -63,7 +59,7 @@ def startParser(pathToModels, option):
             print(bodyContentLength)
         except Exception as e:
             print("Exception: " + str(e))
-            return 0
+            #return 0
 #! ******************************************************* 
 #********Selenium**********
         if(bodyContentLength<1000):
@@ -71,6 +67,8 @@ def startParser(pathToModels, option):
             try:
                 driver = webdriver.Firefox()
                 driver.get(inputLink)
+                driver.minimize_window()
+                driver.set_page_load_timeout(30)
                 print(driver.title + '\n')
                 html = driver.page_source
                 driver.close()
@@ -174,8 +172,10 @@ def startParser(pathToModels, option):
 
             except Exception as e:
                 print(e)
-        '''
+        
     fobjectLinks.close()
     makeDataset = SourceFileLoader("DatasetMakerModule", pathToModels + '/' + "MakeGamingDataset.py").load_module()
     prediction = makeDataset.makeGamingDataset(pathToModels, option)
     return prediction
+'''
+startParser("/home/vaibhav/Prog/Minor/Shopping",2)

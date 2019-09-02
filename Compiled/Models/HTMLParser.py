@@ -48,7 +48,8 @@ def startParser(pathToModels, option):
 #*******Requests**********
 #! *******************************************************    
         try:    
-            html = requests.get(inputLink).text
+            headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0'}
+            html = requests.get(inputLink, headers=headers).text
             soup = BeautifulSoup(html, 'lxml')
             bodyContent = soup.body
             # Remove all script and style elements
@@ -63,7 +64,7 @@ def startParser(pathToModels, option):
             print(bodyContentLength)
         except Exception as e:
             print("Exception: " + str(e))
-            return 0
+            #return 0
 #! ******************************************************* 
 #********Selenium**********
         if(bodyContentLength<1000):
@@ -176,6 +177,10 @@ def startParser(pathToModels, option):
                 print(e)
         '''
     fobjectLinks.close()
-    makeDataset = SourceFileLoader("DatasetMakerModule", pathToModels + '/' + "MakeGamingDataset.py").load_module()
-    prediction = makeDataset.makeGamingDataset(pathToModels, option)
+    #**************Making category specific dataset*************
+    #makeDataset = SourceFileLoader("DatasetMakerModule", pathToModels + '/' + "MakeGamingDataset.py").load_module()
+    #prediction = makeDataset.makeGamingDataset(pathToModels, option)
+
+    makeDataset = SourceFileLoader("DatasetMakerModule", pathToModels + '/' + "MakeShoppingDataset.py").load_module()
+    prediction = makeDataset.makeShoppingDataset(pathToModels, option)
     return prediction
