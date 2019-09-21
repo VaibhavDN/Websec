@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="{% static "Signup/updatedsignupstyle.css" %}">
+	<title>Sign up. Welcome Back to WebSec</title>
+</head>
+<body>
+
+	<div class="loginbody">
+		<h2 id='text'>Signup</h2>
+		<form action="" method="POST">
+			{% csrf_token %}
+			<img id='imga' src="{% static "Signup/user_avatar_profile_login_button_account_member-512.png" %}">
+			<input type="text" name="username" placeholder="Enter your preferred Username" required>
+			<img id='imgb' src="{% static "Signup/password-lock-icon-flat-style-vector-22606269.jpg" %}">
+			<input type="password" name="password" placeholder="Enter your preferred password" required>
+			<img id='imgb' src="{% static "Signup/password-lock-icon-flat-style-vector-22606269.jpg" %}">
+			<input type="password" name="repassword" placeholder="Re-enter your password" required>
+			<input type="text" name="" placeholder="Enter your domain:Educational/Organisation/Child Protection">
+
+			<input type="submit" class="btn" value="Signup">
+			<a id='redirect' href="http://127.0.0.1:8000/login/">Have an account? Log in now?</a>
+		</form>
+
+	</div>
+
+</body>
+</html>
