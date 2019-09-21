@@ -150,5 +150,19 @@ Sep 1,2019
 Anubhav:
 
 1. Scraped webpges of Adult Websites, Bollywood Blogs.
-2.A Corresponding Model using Tfidf approach and Logistic Regression was created.
-3.The Model was deployed on to the flask server.
+
+2. A Corresponding Model using Tfidf approach and Logistic Regression was created.
+
+3. The Model was deployed on to the flask server.
+
+*****************************************
+
+Sep 21,2019
+
+Vaibhav:
+
+1. Connected webpages for login and signup. (COOKIE based login - Login expires after 10 min of inactivity)
+
+2. Connected database for login and signup funstionality. Use first name as username and last name as password (all in lowercase)
+
+
