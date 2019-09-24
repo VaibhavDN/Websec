@@ -165,4 +165,15 @@ Vaibhav:
 
 2. Connected database for login and signup funstionality. Use first name as username and last name as password (all in lowercase)
 
+*****************************************
 
+Sept 25,2019:
+
+Anubhav:
+
+1. Made a GUI Title Analyser for the Website. It scrapes the title of the web page for primary analysis.
+2. A model based on this was prepared using Count Vectorizer and Tfidf Approach. On testing set, gave a good enough accuracy.
+
+Models uploaded to folder Models/Tech Blog Models
+
+**********************************************
