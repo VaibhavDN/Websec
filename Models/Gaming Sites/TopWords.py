@@ -1,8 +1,12 @@
 import os
 from nltk.tokenize import word_tokenize, RegexpTokenizer
 from nltk.corpus import stopwords
+from nltk.stem import WordNetLemmatizer
 
-dirList = os.listdir("./")
+lemitizer = WordNetLemmatizer()
+
+pathOfGaming="./Gaming/"
+dirList = os.listdir(pathOfGaming)
 print(dirList)
 data = ""
 wordCounter = {}
@@ -17,18 +21,20 @@ stpwds.add('href')
 stpwds.add('id')
 stpwds.add('com')
 stpwds.add('us')
-stpwds.add('august')
-stpwds.add('aug')
+addStpwdsList = ['jan','january','feb','february','mar','march','aug','august','sep','september','oct','october','nov','november','dec','december']
+for stpword in addStpwdsList:
+    stpwds.add(stpword)
 print(stpwds)
 #exit(0)
 no_of_dir_done = 0
 for directory in dirList:
+    
     data = ""
-    if(os.path.isdir(directory) and directory != "__pycache__"):
+    if(os.path.isdir(pathOfGaming+directory) and pathOfGaming+directory != "__pycache__"):
         no_of_dir_done+=1
         print(str(no_of_dir_done) + ". Directory found: " + directory)
         
-        fobject = open(directory + "/" + directory + "_bodyContentWithoutTags.txt")
+        fobject = open(pathOfGaming+directory + "/" + directory + "_bodyContentWithoutTags.txt")
         while True:
             line = fobject.readline()
             if line == "":
@@ -42,6 +48,7 @@ for directory in dirList:
             for word in lineSplit:
                 word = word.lower()
                 if (word not in stpwds and word.isalpha() and len(word)>2):
+                    word = lemitizer.lemmatize(word)
                     try:
                         if word not in wordCounter:
                             wordCounter[word] = 1
@@ -68,7 +75,7 @@ for directory in dirList:
         print("*******************************************")
 
 i=0
-fobject = open("TopWords.csv", "w")
+fobject = open("GamingTopWords.csv", "w")
 for key in wordCounter:
     if i > topWordsTaken:
         break

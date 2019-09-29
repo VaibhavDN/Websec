@@ -1,6 +1,9 @@
 import os
 from nltk.tokenize import word_tokenize, RegexpTokenizer
 from nltk.corpus import stopwords
+from nltk.stem import WordNetLemmatizer
+
+lemitizer = WordNetLemmatizer()
 
 dirList = []
 selectedFolder = ""
@@ -12,9 +15,9 @@ if option == 1:
     dirList = os.listdir("./Gaming")
     datasetFile = "GamingTopWordsDataset.csv"
 elif option == 2:
-    fobjectLinks = open("TrainSites.txt", "r")
-    selectedFolder = "Gaming"
-    dirList = os.listdir("./Gaming")
+    fobjectLinks = open("NonGamingSites.txt", "r")
+    selectedFolder = "Testing"
+    dirList = os.listdir("./Testing")
     datasetFile = "NonGamingTopWordsDataset.csv"
 else:
     fobjectLinks = open("TestSites.txt", "r")
@@ -79,6 +82,7 @@ for directory in dirList:
             for word in lineSplit:
                 word = word.lower()
                 if (word not in stpwds and word.isalpha() and len(word)>2):
+                    word = lemitizer.lemmatize(word)
                     try:
                         if word in features:
                             wordCounter[word]+= 1

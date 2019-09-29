@@ -2,26 +2,32 @@ import os
 from nltk.tokenize import word_tokenize, RegexpTokenizer
 from nltk.corpus import stopwords
 from importlib.machinery import SourceFileLoader
+import pandas as pd
 from nltk.stem import WordNetLemmatizer
 
 lemitizer = WordNetLemmatizer()
-def makeGamingDataset(pathToModels, option):
+
+def makePaymentDataset(pathToModels, option):
     dirList = []
     selectedFolder = ""
     datasetFile = ""
 
-    #option = int(input("Choose:\n1. GamingSites.txt\n2. TestSites.txt: "))
     if option == 1:
         fobjectLinks = open(pathToModels + '/' + "TrainSites.txt", "r")
         selectedFolder = pathToModels + '/' + "Training"
         dirList = os.listdir(pathToModels + '/' + "Training")
-        datasetFile = pathToModels + '/' + "GamingTopWordsDataset.csv"
+        datasetFile = pathToModels + '/' + "PaymentTopWordsDataset.csv"
+    elif option == 2:
+        fobjectLinks = open(pathToModels + '/' + "TestSites.txt", "r")
+        selectedFolder = pathToModels + '/' + "Testing"
+        dirList = os.listdir(pathToModels + '/' + "Testing")
+        datasetFile = pathToModels + '/' + "NonPaymentTopWordsDataset.csv"
     else:
         fobjectLinks = open(pathToModels + '/' + "TestSites.txt", "r")
         selectedFolder = pathToModels + '/' + "Testing"
         dirList = os.listdir(pathToModels + '/' + "Testing")
         datasetFile = pathToModels + '/' + "TestDataset.csv"
-
+    #option = int(input("Choose:\n1. TrainSites.txt\n2. TestSites.txt: "))
 
     print(dirList)
     data = ""
@@ -34,17 +40,20 @@ def makeGamingDataset(pathToModels, option):
     stpwds.add('id')
     stpwds.add('com')
     stpwds.add('us')
-    addStpwdsList = ['jan','january','feb','february','mar','march','aug','august','sep','september','oct','october','nov','november','dec','december']
-    for stpword in addStpwdsList:
-        stpwds.add(stpword)
+    stpwds.add('august')
+    stpwds.add('aug')
     #print(stpwds)
+    unigram_freq = pd.read_csv(pathToModels + '/' + "Hundred_unigram_freq.csv")
+    unigram_freq = unigram_freq.iloc[:,1]
+    for words in unigram_freq:
+        stpwds.add(words.lower())
 
-    fobject = open(pathToModels + '/' + "GamingTopWords.csv", "r")   #!Don't Change this
+    fobject = open(pathToModels + '/' + "PaymentTopWords.csv", "r")   #!Don't Change this
     features = fobject.readline()
     fobject.close()
 
     fobject = open(datasetFile, "w")    #To reset the file
-    fobject.write("Site Links,"+features.replace("\n","GamingSite\n"))
+    fobject.write("Site Links,"+features.replace("\n","Payment Gateway\n"))
     fobject.close()
 
     features = features.split(',')
@@ -66,7 +75,7 @@ def makeGamingDataset(pathToModels, option):
             siteLink = fobject.readline()
             fobject.close()
             
-            fobject = open(selectedFolder + "/" + directory + "/" + directory + "_bodyContentWithoutTags.txt")
+            fobject = open(selectedFolder + "/" + directory + "/" + directory + "_bodyContentWithoutTags.txt", encoding='utf-8')
             while True:
                 line = fobject.readline()
                 if line == "":
@@ -96,7 +105,7 @@ def makeGamingDataset(pathToModels, option):
             
             #print(wordCounter)
             fobject = open(datasetFile, "a")
-            fobject.write(siteLink.replace("\n" ,","))
+            fobject.write(siteLink.replace("\n" ,"")+",")
             for key in wordCounter:
                 if i > topWordsTaken:
                     break
@@ -105,15 +114,15 @@ def makeGamingDataset(pathToModels, option):
                 i+=1
             if option == 1:
                 fobject.write("1,")
+            elif option == 2:
+                fobject.write("0,")
             fobject.write("\n")
                 #print(data)
             fobject.close()
             print("*******************************************")
-
-    model = SourceFileLoader("ModelModule", pathToModels + '/' + "Gaming_Model_run.py").load_module()
+    model = SourceFileLoader("ModelModule", pathToModels + '/' + "Payment_Model_run.py").load_module()
     prediction = model.runModel(pathToModels)
     return prediction
 
-
 #*********Testing***********
-#makeGamingDataset("/home/vaibhav/Prog/Minor/Models",2)
+#makePaymentDataset(".",3)

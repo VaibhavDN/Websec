@@ -39,4 +39,3 @@ https://www.theguardian.com/international
 https://www.accuweather.com/
 https://weather.com/en-IN/
 https://github.com/
- 

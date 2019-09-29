@@ -127,4 +127,4 @@ def makeShoppingDataset(pathToModels, option):
 
 
 #*********Testing***********
-makeShoppingDataset("/home/vaibhav/Prog/Minor/Shopping",1)
+makeShoppingDataset("/home/vaibhav/Prog/Minor/Shopping",3)

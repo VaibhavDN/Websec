@@ -85,7 +85,7 @@ def startParser(pathToModels, option):
         # Write the sites link in a file
         try:
             fobject = open(dirName+"/"+finalDomain+"_SiteLink.txt", "w")
-            fobject.write(inputLink)
+            fobject.write(inputLink+"\n")
             fobject.close()
         except Exception as e:
             print("Error occurred: " + str(e))
@@ -178,9 +178,17 @@ def startParser(pathToModels, option):
         '''
     fobjectLinks.close()
     #**************Making category specific dataset*************
-    #makeDataset = SourceFileLoader("DatasetMakerModule", pathToModels + '/' + "MakeGamingDataset.py").load_module()
-    #prediction = makeDataset.makeGamingDataset(pathToModels, option)
-
-    makeDataset = SourceFileLoader("DatasetMakerModule", pathToModels + '/' + "MakeShoppingDataset.py").load_module()
-    prediction = makeDataset.makeShoppingDataset(pathToModels, option)
-    return prediction
+    prediction1=0
+    prediction2=0
+    prediction3=0
+    makeDataset = SourceFileLoader("DatasetMakerModule", pathToModels + '/' + "MakeGamingDataset.py").load_module()
+    prediction1 = makeDataset.makeGamingDataset(pathToModels, option)
+    #makeDataset = SourceFileLoader("DatasetMakerModule", pathToModels + '/' + "MakeShoppingDataset.py").load_module()
+    #prediction2 = makeDataset.makeShoppingDataset(pathToModels, option)
+    #makeDataset = SourceFileLoader("DatasetMakerModule", pathToModels + '/' + "MakePaymentDataset.py").load_module()
+    #prediction3 = makeDataset.makePaymentDataset(pathToModels, option)
+    if(prediction2 == 1):
+        prediction2=2
+    if(prediction3 == 1):
+        prediction3=3
+    return prediction1,prediction2,prediction3
