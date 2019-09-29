@@ -186,4 +186,6 @@ Vaibhav:
 
 2. Improvements to server.
 
+3. Merged Payment/Bank model. [/Compiled/Models/]
+
 **********************************************
