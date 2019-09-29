@@ -177,3 +177,13 @@ Anubhav:
 Models uploaded to folder Models/Tech Blog Models
 
 **********************************************
+
+Sept 30,2019
+
+Vaibhav:
+
+1. Improvements to Gaming and Shopping models. Switched Gaming model from XGBoost to Naive Bayes.
+
+2. Improvements to server.
+
+**********************************************
