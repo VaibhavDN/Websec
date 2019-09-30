@@ -189,3 +189,16 @@ Vaibhav:
 3. Merged Payment/Bank model. [/Compiled/Models/]
 
 **********************************************
+
+Sept 30,2019
+
+Milind
+LV 0.03
+
+1. All 10 categories incorporated in Layer 1.
+
+2. Chrome extension implemented.
+
+3. Layer ready for model merge.
+
+**********************************************
