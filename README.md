@@ -213,4 +213,20 @@ Vaibhav:
 
 3. Fixed bug which led to server crash.
 
+4. Changed folder structure for better clarity.
+
+NOTE: Final working project can be found in [/compiled/] folder. 
+
+To run clone the repo. Make sure django is installed. Change directory to WebsecServer [found in compiled].
+
+Run in terminal:
+
+`
+python manage.py runserver
+`
+
+Load the browser extension and start surfing.
+
+Change blocking categories in [/compiled/Models/HTMLParser.py] (Bottom of the function)
+
 **********************************************
