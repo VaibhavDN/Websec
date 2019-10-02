@@ -202,3 +202,15 @@ LV 0.03
 3. Layer ready for model merge.
 
 **********************************************
+
+Oct 3,2019
+
+Vaibhav:
+
+1. Merged Gaming, Shopping, Movie, VideoStreaming, Banking/Payment, Tech, Entertainment and Adult models.
+
+2. Integration testing successful.
+
+3. Fixed bug which led to server crash.
+
+**********************************************
