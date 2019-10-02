@@ -42,14 +42,22 @@ def getLink(request):
     print(pathToModels)
     parser = SourceFileLoader('ParserModule', pathToParser).load_module()
     print(parser)
-    prediction1,prediction2,prediction3 = parser.startParser(pathToModels, 3)
+    prediction1,prediction2,prediction3,prediction4,prediction5,prediction6,prediction7 = parser.startParser(pathToModels, 3)
     
     if(prediction1 == 1):
         returnResponse = "<center><H4>Sorry, gaming sites are blocked: "+link+"</H4></center>"
-    elif(prediction2 == 2):
+    elif(prediction2 == 1):
         returnResponse = "<center><H4>Sorry, shopping sites are blocked: "+link+"</H4></center>"
-    elif(prediction3 == 3):
+    elif(prediction3 == 1):
         returnResponse = "<center><H4>Sorry, payment sites are blocked: "+link+"</H4></center>"
+    elif(prediction4 == 0):
+        returnResponse = "<center><H4>Sorry, movie sites are blocked: "+link+"</H4></center>"
+    elif(prediction5 == 0):
+        returnResponse = "<center><H4>Sorry, video streaming sites are blocked: "+link+"</H4></center>"
+    elif(prediction6 == 1):
+        returnResponse = "<center><H4>Sorry, tech sites are blocked: "+link+"</H4></center>"
+    elif(prediction7 > 1):
+        returnResponse = "<center><H4>Sorry, entertainment and adult sites are blocked: "+link+"</H4></center>"
     else:
         return HttpResponseRedirect(link)
     return HttpResponse(returnResponse)
