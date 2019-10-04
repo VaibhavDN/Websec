@@ -213,7 +213,7 @@ Vaibhav:
 
 3. Fixed bug which led to server crash.
 
-4. Changed folder structure for better clarity.
+4. Changed folder structure for better clarity
 
 NOTE: Final working project can be found in [/compiled/] folder. 
 
@@ -228,5 +228,13 @@ python manage.py runserver
 Load the browser extension and start surfing.
 
 Change blocking categories in [/compiled/Models/HTMLParser.py] (Bottom of the function)
+
+**********************************************
+
+Oct 4, 2019
+
+Vaibhav:
+
+Design changes to login page.
 
 **********************************************
