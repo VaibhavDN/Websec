@@ -5,9 +5,9 @@
 	<link rel="stylesheet" type="text/css" href="{% static "Login/updatedlogin.css" %}">
 	<title>Log in. Welcome Back to WebSec</title>
 </head>
-<body>
+<body text="white">
 
-	<div class="loginbody">
+	<div class="loginbody" style="border: 0px solid red; background-color: rgba(183, 73, 90, 0.5); padding: 20px 30px 20px 30px;">
 		<h2 id='text'>Login</h2>
 		<form action="" method="POST">
 			{% csrf_token %}
