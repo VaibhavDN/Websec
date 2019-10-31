@@ -10,19 +10,20 @@ def ShowLoginPage(request):
         loginType = request.POST['loginType']
 
         returnUrl = ""
+        negativeResponseUrl = "<center><h3>This user doesn't exist. Please consider signing up or try again.</h3><a href="">Try again</a></center>"
         if loginType == "userlogin":
             try:
                 userdetails = UserDetails.objects.get(username=username)
                 returnUrl = "http://www.google.com/"
             except:
-                return HttpResponse("<center><h3>This user doesn't exist. Please consider signing up or try again.</h3><a href="">Try again</a></center>")
+                return HttpResponse(negativeResponseUrl)
             saved_password = userdetails.password
         else:
             try:
                 admindetails = AdminDetails.objects.get(username=username)
-                returnUrl = "http://duckduckgo.com/"
+                returnUrl = render(request, "Login/AdminPanel.html")
             except:
-                return HttpResponse("<center><h3>This user doesn't exist. Please consider signing up or try again.</h3><a href="">Try again</a></center>")
+                return HttpResponse(negativeResponseUrl)
             saved_password = admindetails.password
         
         if saved_password == request.POST['password']:
