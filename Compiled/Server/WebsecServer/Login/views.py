@@ -3,7 +3,7 @@ from django.http import HttpResponse,HttpResponseRedirect
 from .models import UserDetails
 import datetime
 
-def ShowLoginPage(request):
+def ShowLoginPageUser(request):
     if request.POST:
         username = request.POST['username']
         try:
@@ -19,4 +19,7 @@ def ShowLoginPage(request):
         else:
             return HttpResponse("<center><h3>Wrong password.</h3><a href="">Try again</a></center>")         
     return render(request, 'Login/updatedloginform.html')
+
+def ShowLoginPageAdmin(request):
+    return HttpResponse("Admin Page")
 

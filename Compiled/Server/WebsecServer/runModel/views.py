@@ -18,10 +18,10 @@ def getLink(request):
             cookie_time = last_connection[1].split('.')[0].split(':')[1]
             current_time = current_datetime.split(' ')[1].split('.')[0].split(':')[1]
             if(abs(int(current_time) - int(cookie_time)) > 10):
-                return HttpResponseRedirect("http://127.0.0.1:8000/login/")
+                return HttpResponseRedirect("http://127.0.0.1:8000/login/user")
         #return HttpResponseRedirect("https://www.google.com")
     else:
-        return HttpResponseRedirect("http://127.0.0.1:8000/login/")
+        return HttpResponseRedirect("http://127.0.0.1:8000/login/user")
     pathToModels = os.path.abspath('./')
     pathToModels = pathToModels.split('/')
     pathToModels.pop()
