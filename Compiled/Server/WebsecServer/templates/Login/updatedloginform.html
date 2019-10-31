@@ -11,6 +11,13 @@
 		<h2 id='text'>Login</h2>
 		<form action="" method="POST">
 			{% csrf_token %}
+			<center>
+				<span style="color: rgb(24, 5, 37);">Login Type:</span>
+				<select name="loginType"> <!-- style="background-color:rgba(183, 73, 90, 0.5); color: #FFF;"-->
+					<option value="userlogin">User Login</option>
+					<option value="adminlogin">Admin Login</option>
+				</select>
+			</center><br>
 			<img id='imga' src="{% static "Login/user_avatar_profile_login_button_account_member-512.png" %}">
 			<input type="text" name="username" placeholder="Enter your Username" required>
 			<img id='imgb' src="{% static "Login/password-lock-icon-flat-style-vector-22606269.jpg" %}">
