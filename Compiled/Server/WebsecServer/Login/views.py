@@ -9,30 +9,34 @@ def ShowLoginPage(request):
         username = request.POST['username']
         loginType = request.POST['loginType']
 
-        returnUrl = ""
-        negativeResponseUrl = "<center><h3>This user doesn't exist. Please consider signing up or try again.</h3><a href="">Try again</a></center>"
+        returnUrl = "http://www.google.com/"
+        negativeResponse = "<center><h3>This user doesn't exist. Please consider signing up or try again.</h3><a href="">Try again</a></center>"
+        wrongPassResponse = "<center><h3>Wrong password.</h3><a href="">Try again</a></center>"
         if loginType == "userlogin":
             try:
                 userdetails = UserDetails.objects.get(username=username)
-                returnUrl = "http://www.google.com/"
             except:
-                return HttpResponse(negativeResponseUrl)
+                return HttpResponse(negativeResponse)
             saved_password = userdetails.password
-        else:
-            try:
-                admindetails = AdminDetails.objects.get(username=username)
-                returnUrl = render(request, "Login/AdminPanel.html")
-            except:
-                return HttpResponse(negativeResponseUrl)
-            saved_password = admindetails.password
-        
-        if saved_password == request.POST['password']:
             response = HttpResponseRedirect(returnUrl)
             response.set_cookie('last_connection', datetime.datetime.now())
             response.set_cookie('username', username)
-            return response
+            if saved_password == request.POST['password']:
+                return response
+            else:
+                return HttpResponse(wrongPassResponse)
         else:
-            return HttpResponse("<center><h3>Wrong password.</h3><a href="">Try again</a></center>")         
+            try:
+                admindetails = AdminDetails.objects.get(username=username)
+            except:
+                return HttpResponse(negativeResponse)
+            saved_password = admindetails.password
+            response = render(request, "Login/AdminPanel.html")
+            if saved_password == request.POST['password']:
+                return response
+            else:
+                return HttpResponse(wrongPassResponse)
+
     return render(request, 'Login/updatedloginform.html')
 
 
