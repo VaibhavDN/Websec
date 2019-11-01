@@ -72,7 +72,7 @@ def ShowLoginPage(request):
                 return response
             else:
                 return HttpResponse(wrongPassResponse)
-
-    return render(request, 'Login/updatedloginform.html')
+    else:
+        return render(request, 'Login/updatedloginform.html')
 
 
