@@ -1,8 +1,52 @@
 <html>
   <head>
-    <title></title>
-    <meta content="">
-    <style></style>
+    <title>Admin Panel</title>
   </head>
-  <body>Admin Panel</body>
+  <body>
+    <h3><center>Admin Panel</center></h3>
+    <form action="" method="POST">
+    {% csrf_token %}
+    Select user: 
+    <select name="selectUser" id="selectUser_id" onchange="loadNewStatus()">
+      {% for user in  modelsActiveStatus_all %}
+        <option value="{{ user.username }}">{{ user.username }}</option>
+      {% endfor %}
+    </select>
+
+    {% with 'game shopping payment movie video tech entertainment' as modelsList%}
+      {% for models in modelsList.split %}
+        <br><input type="checkbox" id="{{ models }}" name="{{ models }}" value="{{ models }}"> {{ models }}
+      {% endfor %}      
+      
+      <script type="text/javascript">
+        loadNewStatus();  //For first time the page is loaded
+        function loadNewStatus(){
+          var selectedUser = document.getElementById("selectUser_id").value;
+          var statusStringJS = ""
+          //alert("Selected: " + selectedUser)
+          {% for user in  modelsActiveStatus_all %}
+            if(selectedUser == "{{user.username}}"){
+              var i=0;
+              statusStringJS = "{{user.statusString}}";
+              {% for models in modelsList.split %}
+                if(statusStringJS[i] == 1 && i<statusStringJS.length){
+                  document.getElementById("{{ models }}").checked = true;
+                }
+                else{
+                  document.getElementById("{{ models }}").checked = false;
+                }
+                i++;
+              {% endfor %}
+            }
+          {% endfor %}
+        }
+
+      </script>
+
+    {% endwith %}
+
+    <br>
+    <input type="submit" value="Submit">
+  </form>
+  </body>
 </html>

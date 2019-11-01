@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.shortcuts import render
 from django.http import HttpResponse,HttpResponseRedirect
-from Login.models import UserDetails
+from Login.models import UserDetails, ModelsActiveStatus
 
 def ShowSignupPage(request):
     if request.POST:
@@ -16,6 +16,10 @@ def ShowSignupPage(request):
                 userdetails.username = username
                 userdetails.password = password
                 userdetails.save()
+                modelsActiveStatus = ModelsActiveStatus()
+                modelsActiveStatus.username = username
+                modelsActiveStatus.statusString = "1111111111"
+                modelsActiveStatus.save()
                 return HttpResponseRedirect("http://127.0.0.1:8000/login/")
             else:
                 return HttpResponse("<center><h3>Password mismatch!.</h3><a href="">Try again</a></center>")            
