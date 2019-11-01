@@ -238,3 +238,15 @@ Vaibhav:
 Design changes to login page.
 
 **********************************************
+
+Nov 1, 2019
+
+Vaibhav:
+
+1. Added active models database.
+
+2. Added admin login functionality.
+
+3. Added admin control functionality.
+
+**********************************************
