@@ -31,7 +31,7 @@ def saveModelSettings(request):
 def ShowLoginPage(request):
     if request.POST:
         try:
-            username = request.POST['username']
+            username = request.POST['username'] #!To change to if username in request.POST
             loginType = request.POST['loginType']
         except:
             saved = saveModelSettings(request)
