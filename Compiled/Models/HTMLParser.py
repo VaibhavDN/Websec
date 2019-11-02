@@ -8,10 +8,15 @@ from importlib.machinery import SourceFileLoader
 import requests
 #import isGameSite
 
-def startParser(pathToModels, option):
+def startParser(pathToModels, option, username):
     #***************Housekeeping*****************
     fobject = open("score.txt", "w")  # Emptying the score file
     fobject.close()
+
+    #****For accessing models.py (In Login) by external python script****
+    os.environ.setdefault("DJANGO_SETTINGS_MODULE","WebsecServer.settings")
+    from Login.models import ModelsActiveStatus
+    #print(ModelsActiveStatus.objects.all())
     #********************************************
 
     testingFolder = pathToModels + '/' + "Testing"
@@ -180,27 +185,46 @@ def startParser(pathToModels, option):
                 print(e)
         '''
     fobjectLinks.close()
-    #**************Making category specific dataset*************
+
+
+    user = ModelsActiveStatus.objects.get(username = username)
+    statusString = user.statusString
+    print("\nStatusString: "+statusString+"\n")
+    #**************Model control*************
     prediction1=0
     prediction2=0
     prediction3=0
     prediction4=1
     prediction5=1
     prediction6=0
-    #makeDataset = SourceFileLoader("DatasetMakerModule", pathToModels + '/' + "Gaming/MakeGamingDataset.py").load_module()
-    #prediction1 = makeDataset.makeGamingDataset(pathToModels, option)
-    #makeDataset = SourceFileLoader("DatasetMakerModule", pathToModels + '/' + "Shopping/MakeShoppingDataset.py").load_module()
-    #prediction2 = makeDataset.makeShoppingDataset(pathToModels, option)
-    #makeDataset = SourceFileLoader("DatasetMakerModule", pathToModels + '/' + "Payment/MakePaymentDataset.py").load_module()
-    #prediction3 = makeDataset.makePaymentDataset(pathToModels, option)
-    #makeDataset = SourceFileLoader("DatasetMakerModule", pathToModels + '/' + "Movie/movie_model_run.py").load_module()
-    #prediction4 = makeDataset.cral(pathToModels,bodyContentWithoutTags)
-    #makeDataset = SourceFileLoader("DatasetMakerModule", pathToModels + '/' + "VideoStreaming/stream_model_run.py").load_module()
-    #prediction5 = makeDataset.cral(pathToModels,bodyContentWithoutTags)
-    #makeDataset = SourceFileLoader("DatasetMakerModule", pathToModels + '/' + "Tech/app.py").load_module()
-    #prediction6 = makeDataset.predict(pathToModels,soup)
-    makeDataset = SourceFileLoader("DatasetMakerModule", pathToModels + '/' + "EntertainmentAndAdult/EntertainmentAndAdult.py").load_module()
-    prediction7 = makeDataset.predict(pathToModels,bodyContentWithoutTags)
+    prediction7=0
+    if statusString[0] == '1':
+        makeDataset = SourceFileLoader("DatasetMakerModule", pathToModels + '/' + "Gaming/MakeGamingDataset.py").load_module()
+        prediction1 = makeDataset.makeGamingDataset(pathToModels, option)
+
+    if statusString[1] == '1':
+        makeDataset = SourceFileLoader("DatasetMakerModule", pathToModels + '/' + "Shopping/MakeShoppingDataset.py").load_module()
+        prediction2 = makeDataset.makeShoppingDataset(pathToModels, option)
+
+    if statusString[2] == '1':
+        makeDataset = SourceFileLoader("DatasetMakerModule", pathToModels + '/' + "Payment/MakePaymentDataset.py").load_module()
+        prediction3 = makeDataset.makePaymentDataset(pathToModels, option)
+
+    if statusString[3] == '1':
+        makeDataset = SourceFileLoader("DatasetMakerModule", pathToModels + '/' + "Movie/movie_model_run.py").load_module()
+        prediction4 = makeDataset.cral(pathToModels,bodyContentWithoutTags)
+
+    if statusString[4] == '1':
+        makeDataset = SourceFileLoader("DatasetMakerModule", pathToModels + '/' + "VideoStreaming/stream_model_run.py").load_module()
+        prediction5 = makeDataset.cral(pathToModels,bodyContentWithoutTags)
+
+    if statusString[5] == '1':
+        makeDataset = SourceFileLoader("DatasetMakerModule", pathToModels + '/' + "Tech/app.py").load_module()
+        prediction6 = makeDataset.predict(pathToModels,soup)
+
+    if statusString[6] == '1':
+        makeDataset = SourceFileLoader("DatasetMakerModule", pathToModels + '/' + "EntertainmentAndAdult/EntertainmentAndAdult.py").load_module()
+        prediction7 = makeDataset.predict(pathToModels,bodyContentWithoutTags)
     '''if(prediction2 == 1):
         prediction2=2
     if(prediction3 == 1):

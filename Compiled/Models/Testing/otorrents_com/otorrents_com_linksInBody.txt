@@ -1,0 +1,69 @@
+<a class="addthis_button_facebook_like" fb:like:layout="button_count" style="clear:both"></a>
+<a class="addthis_button_tweet" style="clear:both" tw:via="addthis"></a>
+<a class="addthis_button_google_plusone" g:plusone:size="medium" style="clear:both"></a>
+<a href="https://www.positivessl.com" id="SSL" style="position:absolute;right:0px;top:0px;font-family: arial; font-size: 10px; color: #212121; text-decoration: none;"><img alt="SSL Certificate" border="0" src="https://www.positivessl.com/images-new/PositiveSSL_tl_trans.png" title="SSL Certificate"/></a>
+<a class="logo-link" href="https://otorrents.com"><img alt="logo" id="logo" src="https://otorrents.com/public/images/otorrents.png"/></a>
+<a href="https://otorrents.com" title="Home">Home</a>
+<a href="explore?order=latest" title="Explore">Explore</a>
+<a href="contact" title="Contact">Contact</a>
+<a class="current">1</a>
+<a href="/Games?page=2">2</a>
+<a href="/Games?page=2">›</a>
+<a href="Mafia-III-2016"><img alt="Mafia III (2016)" height="280" onerror="this.src='https://otorrents.com/public/images/no-cover-small.png'" src="https://otorrents.com/image/196x280/mafia3-2016-poster.jpg" title="Mafia III 2016" width="196"/></a>
+<a class="item-link" href="Mafia-III-2016">Mafia III (2016)</a>
+<a href="Batman-Arkham-Origins-2013"><img alt="Batman Arkham Origins (2013)" height="280" onerror="this.src='https://otorrents.com/public/images/no-cover-small.png'" src="https://otorrents.com/image/196x280/batman-arkham-origins-poster2.jpg" title="Batman Arkham Origins 2013" width="196"/></a>
+<a class="item-link" href="Batman-Arkham-Origins-2013">Batman Arkham Origins (2013)</a>
+<a href="Batman-Arkham-Knight-2015"><img alt="Batman Arkham Knight (2015)" height="280" onerror="this.src='https://otorrents.com/public/images/no-cover-small.png'" src="https://otorrents.com/image/196x280/Batman_Arkham_Knight-cover.jpg" title="Batman Arkham Knight 2015" width="196"/></a>
+<a class="item-link" href="Batman-Arkham-Knight-2015">Batman Arkham Knight (2015)</a>
+<a href="Minecraft-Story-Mode-Episode-7All-Other-Epsiodes-2016"><img alt="Minecraft Story Mode Episode 7 + All Other Epsiodes (2016)" height="280" onerror="this.src='https://otorrents.com/public/images/no-cover-small.png'" src="https://otorrents.com/image/196x280/Minecraft.Story.Mode.Episode.7-cover.jpg" title="Minecraft Story Mode Episode 7 + All Other Epsiodes 2016" width="196"/></a>
+<a class="item-link" href="Minecraft-Story-Mode-Episode-7All-Other-Epsiodes-2016">Minecraft Story Mode Episode 7 + All Other Epsiodes (2016)</a>
+<a href="FIFA-15-2014"><img alt="FIFA 15 (2014)" height="280" onerror="this.src='https://otorrents.com/public/images/no-cover-small.png'" src="https://otorrents.com/image/196x280/fifa_15_cover.jpg" title="FIFA 15 2014" width="196"/></a>
+<a class="item-link" href="FIFA-15-2014">FIFA 15 (2014)</a>
+<a href="Grand-Theft-Auto-V-2015"><img alt="Grand Theft Auto V (2015)" height="280" onerror="this.src='https://otorrents.com/public/images/no-cover-small.png'" src="https://otorrents.com/image/196x280/grand.theft.auto.v.cover.jpg" title="Grand Theft Auto V 2015" width="196"/></a>
+<a class="item-link" href="Grand-Theft-Auto-V-2015">Grand Theft Auto V (2015)</a>
+<a href="Need-for-Speed-Hot-Pursuit-2010"><img alt="Need for Speed: Hot Pursuit (2010)" height="280" onerror="this.src='https://otorrents.com/public/images/no-cover-small.png'" src="https://otorrents.com/image/196x280/need.for.speed.nfs.hot.pursuit.poster.jpg" title="Need for Speed: Hot Pursuit 2010" width="196"/></a>
+<a class="item-link" href="Need-for-Speed-Hot-Pursuit-2010">Need for Speed: Hot Pursuit (2010)</a>
+<a href="Minecraft-19-2016"><img alt="Minecraft 1.9 (2016)" height="280" onerror="this.src='https://otorrents.com/public/images/no-cover-small.png'" src="https://otorrents.com/image/196x280/minecraft.1.9.cover.jpg" title="Minecraft 1.9 2016" width="196"/></a>
+<a class="item-link" href="Minecraft-19-2016">Minecraft 1.9 (2016)</a>
+<a href="Doom-3-BFG-Edition-2012"><img alt="Doom 3: BFG Edition (2012)" height="280" onerror="this.src='https://otorrents.com/public/images/no-cover-small.png'" src="https://otorrents.com/image/196x280/doom_3_bfg_edition_poster.png" title="Doom 3: BFG Edition 2012" width="196"/></a>
+<a class="item-link" href="Doom-3-BFG-Edition-2012">Doom 3: BFG Edition (2012)</a>
+<a href="The-Evil-Within-2014"><img alt="The Evil Within (2014)" height="280" onerror="this.src='https://otorrents.com/public/images/no-cover-small.png'" src="https://otorrents.com/image/196x280/the_evil_within_poster_6dc.jpg" title="The Evil Within 2014" width="196"/></a>
+<a class="item-link" href="The-Evil-Within-2014">The Evil Within (2014)</a>
+<a href="Sniper-Ghost-Warrior-2-2013"><img alt="Sniper: Ghost Warrior 2 (2013)" height="280" onerror="this.src='https://otorrents.com/public/images/no-cover-small.png'" src="https://otorrents.com/image/196x280/sniper-ghost-warrior-2-cover.jpg" title="Sniper: Ghost Warrior 2 2013" width="196"/></a>
+<a class="item-link" href="Sniper-Ghost-Warrior-2-2013">Sniper: Ghost Warrior 2 (2013)</a>
+<a href="Hitman-Absolution-2012"><img alt="Hitman Absolution (2012)" height="280" onerror="this.src='https://otorrents.com/public/images/no-cover-small.png'" src="https://otorrents.com/image/196x280/Hitman-Box-Art.jpg" title="Hitman Absolution 2012" width="196"/></a>
+<a class="item-link" href="Hitman-Absolution-2012">Hitman Absolution (2012)</a>
+<a href="Call-of-Duty-Black-Ops-III-2015"><img alt="Call of Duty: Black Ops III (2015)" height="280" onerror="this.src='https://otorrents.com/public/images/no-cover-small.png'" src="https://otorrents.com/image/196x280/call.of.duty.black.ops.iii.2015.cover.png" title="Call of Duty: Black Ops III 2015" width="196"/></a>
+<a class="item-link" href="Call-of-Duty-Black-Ops-III-2015">Call of Duty: Black Ops III (2015)</a>
+<a href="Assassins-Creed-Syndicate-2015"><img alt="Assassin's Creed Syndicate (2015)" height="280" onerror="this.src='https://otorrents.com/public/images/no-cover-small.png'" src="https://otorrents.com/image/196x280/Assassins-creed-syndicate-cover.jpg" title="Assassin's Creed Syndicate 2015" width="196"/></a>
+<a class="item-link" href="Assassins-Creed-Syndicate-2015">Assassin's Creed Syndicate (2015)</a>
+<a href="Football-Manager-2015"><img alt="Football Manager (2015)" height="280" onerror="this.src='https://otorrents.com/public/images/no-cover-small.png'" src="https://otorrents.com/image/196x280/football.manager.2015.cover.jpg" title="Football Manager 2015" width="196"/></a>
+<a class="item-link" href="Football-Manager-2015">Football Manager (2015)</a>
+<a href="Fallout-4-2015"><img alt="Fallout 4 (2015)" height="280" onerror="this.src='https://otorrents.com/public/images/no-cover-small.png'" src="https://otorrents.com/image/196x280/Fallout4_cover.jpg" title="Fallout 4 2015" width="196"/></a>
+<a class="item-link" href="Fallout-4-2015">Fallout 4 (2015)</a>
+<a href="Mortal-Kombat-X-2015"><img alt="Mortal Kombat X (2015)" height="280" onerror="this.src='https://otorrents.com/public/images/no-cover-small.png'" src="https://otorrents.com/image/196x280/mortal.kombat.x.2015.cover.jpg" title="Mortal Kombat X 2015" width="196"/></a>
+<a class="item-link" href="Mortal-Kombat-X-2015">Mortal Kombat X (2015)</a>
+<a href="Mad-Max-2015"><img alt="Mad Max (2015)" height="280" onerror="this.src='https://otorrents.com/public/images/no-cover-small.png'" src="https://otorrents.com/image/196x280/mad_max_video_game_cover_1.jpg" title="Mad Max 2015" width="196"/></a>
+<a class="item-link" href="Mad-Max-2015">Mad Max (2015)</a>
+<a href="NBA-2K16-2015"><img alt="NBA 2K16 (2015)" height="280" onerror="this.src='https://otorrents.com/public/images/no-cover-small.png'" src="https://otorrents.com/image/196x280/NBA_2K16_cover_art.jpg" title="NBA 2K16 2015" width="196"/></a>
+<a class="item-link" href="NBA-2K16-2015">NBA 2K16 (2015)</a>
+<a href="Battlefield-Hardline-2015"><img alt="Battlefield Hardline (2015)" height="280" onerror="this.src='https://otorrents.com/public/images/no-cover-small.png'" src="https://otorrents.com/image/196x280/battlefield_hardline_2015_cover.jpg" title="Battlefield Hardline 2015" width="196"/></a>
+<a class="item-link" href="Battlefield-Hardline-2015">Battlefield Hardline (2015)</a>
+<a href="Metal-Gear-Solid-V-The-Phantom-Pain-Full-Cracked-2015"><img alt="Metal Gear Solid V: The Phantom Pain Full Cracked (2015)" height="280" onerror="this.src='https://otorrents.com/public/images/no-cover-small.png'" src="https://otorrents.com/image/196x280/metal-gear-solid-v-the-phantom-pain-cover.jpg" title="Metal Gear Solid V: The Phantom Pain Full Cracked 2015" width="196"/></a>
+<a class="item-link" href="Metal-Gear-Solid-V-The-Phantom-Pain-Full-Cracked-2015">Metal Gear Solid V: The Phantom Pain Full Cracked (2015)</a>
+<a href="One-Piece-Pirate-Warriors-3-with-DLC-2015"><img alt="One Piece Pirate Warriors 3 with DLC (2015)" height="280" onerror="this.src='https://otorrents.com/public/images/no-cover-small.png'" src="https://otorrents.com/image/196x280/one_piece_pirate_warriors_3_2015_cover.jpg" title="One Piece Pirate Warriors 3 with DLC 2015" width="196"/></a>
+<a class="item-link" href="One-Piece-Pirate-Warriors-3-with-DLC-2015">One Piece Pirate Warriors 3 with DLC (2015)</a>
+<a href="Assassins-Creed-Unity-2014"><img alt="Assassin's Creed Unity (2014)" height="280" onerror="this.src='https://otorrents.com/public/images/no-cover-small.png'" src="https://otorrents.com/image/196x280/assasings_creed_unity_poster.jpg" title="Assassin's Creed Unity 2014" width="196"/></a>
+<a class="item-link" href="Assassins-Creed-Unity-2014">Assassin's Creed Unity (2014)</a>
+<a href="Call-of-Duty-Advanced-Warfare-2014"><img alt="Call of Duty: Advanced Warfare (2014)" height="280" onerror="this.src='https://otorrents.com/public/images/no-cover-small.png'" src="https://otorrents.com/image/196x280/call-of-duty-advanced-warfare-cover.jpg" title="Call of Duty: Advanced Warfare 2014" width="196"/></a>
+<a class="item-link" href="Call-of-Duty-Advanced-Warfare-2014">Call of Duty: Advanced Warfare (2014)</a>
+<a href="Counter-Strike-Global-Offensive-No-Steam-2012"><img alt="Counter-Strike: Global Offensive No Steam (2012)" height="280" onerror="this.src='https://otorrents.com/public/images/no-cover-small.png'" src="https://otorrents.com/image/196x280/counter-strike-GO_cover.jpg" title="Counter-Strike: Global Offensive No Steam 2012" width="196"/></a>
+<a class="item-link" href="Counter-Strike-Global-Offensive-No-Steam-2012">Counter-Strike: Global Offensive No Steam (2012)</a>
+<a class="current">1</a>
+<a href="/Games?page=2">2</a>
+<a href="/Games?page=2">›</a>
+<a href="https://otorrents.com">otorrents.com</a>
+<a href="https://www.facebook.com/otorrents1" target="_blank">Facebook</a>
+<a href="https://twitter.com/otorrents1" target="_blank">Twitter</a>
+<a href="https://plus.google.com/+Otorrents1" target="_blank">Google+</a>
+<a href="https://otorrents.com/dmca" target="_blank">DMCA</a>

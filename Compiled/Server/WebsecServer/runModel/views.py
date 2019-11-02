@@ -16,10 +16,11 @@ def getLink(request):
         current_date = current_datetime.split(' ')[0].split('-')
         if(cookie_date[2] == current_date[2]):
             cookie_time = last_connection[1].split('.')[0].split(':')[1]
-            current_time = current_datetime.split(' ')[1].split('.')[0].split(':')[1]
+            current_time = current_datetime.split(
+                ' ')[1].split('.')[0].split(':')[1]
             if(abs(int(current_time) - int(cookie_time)) > 10):
                 return HttpResponseRedirect("http://127.0.0.1:8000/login/")
-        #return HttpResponseRedirect("https://www.google.com")
+        # return HttpResponseRedirect("https://www.google.com")
     else:
         return HttpResponseRedirect("http://127.0.0.1:8000/login/")
     pathToModels = os.path.abspath('./')
@@ -33,8 +34,8 @@ def getLink(request):
         link = request.GET['link']
     else:
         print("Link not found")
-    
-    testSitesPath = pathToModels + '/' + "TestSites.txt" 
+
+    testSitesPath = pathToModels + '/' + "TestSites.txt"
     fobject = open(testSitesPath, "w")
     fobject.write(link)
     fobject.close()
@@ -42,8 +43,9 @@ def getLink(request):
     print(pathToModels)
     parser = SourceFileLoader('ParserModule', pathToParser).load_module()
     print(parser)
-    prediction1,prediction2,prediction3,prediction4,prediction5,prediction6,prediction7 = parser.startParser(pathToModels, 3)
-    
+    prediction1, prediction2, prediction3, prediction4, prediction5, prediction6, prediction7 = parser.startParser(
+        pathToModels, 3, request.COOKIES['username'])
+
     if(prediction1 == 1):
         returnResponse = "<center><H4>Sorry, gaming sites are blocked: "+link+"</H4></center>"
     elif(prediction2 == 1):
@@ -53,12 +55,13 @@ def getLink(request):
     elif(prediction4 == 0):
         returnResponse = "<center><H4>Sorry, movie sites are blocked: "+link+"</H4></center>"
     elif(prediction5 == 0):
-        returnResponse = "<center><H4>Sorry, video streaming sites are blocked: "+link+"</H4></center>"
+        returnResponse = "<center><H4>Sorry, video streaming sites are blocked: " + \
+            link+"</H4></center>"
     elif(prediction6 == 1):
         returnResponse = "<center><H4>Sorry, tech sites are blocked: "+link+"</H4></center>"
     elif(prediction7 > 1):
-        returnResponse = "<center><H4>Sorry, entertainment and adult sites are blocked: "+link+"</H4></center>"
+        returnResponse = "<center><H4>Sorry, entertainment and adult sites are blocked: " + \
+            link+"</H4></center>"
     else:
         return HttpResponseRedirect(link)
     return HttpResponse(returnResponse)
-
