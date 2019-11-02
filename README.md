@@ -250,3 +250,13 @@ Vaibhav:
 3. Added admin control functionality.
 
 **********************************************
+
+Nov 2, 2019
+
+Vaibhav:
+
+Completed implementation of Model control system. Admin can login and change the user settings 
+
+and the settings will be instantly applied.
+
+**********************************************
