@@ -260,3 +260,14 @@ Completed implementation of Model control system. Admin can login and change the
 and the settings will be instantly applied.
 
 **********************************************
+
+Nov 7, 2019
+
+Vaibhav:
+
+1. Implemented REST API
+
+2. Added Android app
+
+
+**********************************************
