@@ -27,7 +27,9 @@
           {% for user in  modelsActiveStatus_all %}
             if(selectedUser == "{{user.username}}"){
               var i=0;
+              //ssplit
               statusStringJS = "{{user.statusString}}";
+              //ssplit
               {% for models in modelsList.split %}
                 if(statusStringJS[i] == 1 && i<statusStringJS.length){
                   document.getElementById("{{ models }}").checked = true;

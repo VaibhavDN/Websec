@@ -25,7 +25,7 @@ SECRET_KEY = 't3d7m!n5r)_swl^56$=bx-#88q1y&09@e$hkqflo@z7_%j47u!'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['webwebsec.serveo.net','0.0.0.0','webwebsec.localtunnel.me','127.0.0.1']
 
 
 # Application definition
@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [

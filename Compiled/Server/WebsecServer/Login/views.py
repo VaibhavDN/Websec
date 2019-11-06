@@ -3,6 +3,10 @@ from django.http import HttpResponse,HttpResponseRedirect
 from .models import UserDetails, AdminDetails, ModelsActiveStatus
 import datetime
 from django.template import loader
+from django.views.decorators.csrf import csrf_exempt
+from rest_framework.decorators import api_view
+from .serializers import StatusSerializer
+from rest_framework.response import Response
 
 def saveModelSettings(request):
     username = ""
@@ -30,6 +34,7 @@ def saveModelSettings(request):
 
 def ShowLoginPage(request):
     if request.POST:
+        print(request.POST)
         try:
             username = request.POST['username'] #!To change to if username in request.POST
             loginType = request.POST['loginType']
@@ -74,5 +79,29 @@ def ShowLoginPage(request):
                 return HttpResponse(wrongPassResponse)
     else:
         return render(request, 'Login/updatedloginform.html')
+
+@csrf_exempt 
+@api_view(['GET', 'POST', ])
+def SmartphoneLogin(request):
+    if request.POST:
+        print(request.POST)
+        negativeResponse = "<center><h3>This user doesn't exist. Please consider signing up or try again.</h3><a href="">Try again</a></center>"
+        wrongPassResponse = "<center><h3>Wrong password.</h3><a href="">Try again</a></center>"
+        if 'username' in request.POST and 'loginType' in request.POST:
+            try:
+                username = request.POST['username']
+                admindetails = AdminDetails.objects.get(username=username)
+            except:
+                return HttpResponse(negativeResponse)
+            saved_password = admindetails.password
+            modelsActiveStatus_all = ModelsActiveStatus.objects.all()
+            serializer = StatusSerializer(modelsActiveStatus_all, many=True)
+            response = Response(serializer.data)
+            if saved_password == request.POST['password']:
+                return response
+            else:
+                return HttpResponse(wrongPassResponse)
+    else:
+        return HttpResponse("<center>Invalid request</center>")
 
 

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Websec</string>
+    <string name="username_hint">Username</string>
+    <string name="password_hint">Password</string>
+    <string name="submit">Submit</string>
+    <string name="admin_login">Admin Login</string>
+</resources>
