@@ -271,3 +271,16 @@ Vaibhav:
 
 
 **********************************************
+
+Nov 10, 2019
+
+Vaibhav:
+
+1. Android App: Admin: Change user settings functionality complete.
+
+2. Server: Changes to allow admin to save new model settings 
+
+   sent by admin using android app.
+
+
+**********************************************

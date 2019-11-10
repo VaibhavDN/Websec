@@ -5,4 +5,5 @@
     <color name="colorAccent">#606</color>
     <color name="white">#FFF</color>
     <color name="actionbar">#333</color>
+    <color name="spinnerPopUpBackground">#FFFFFF</color>
 </resources>

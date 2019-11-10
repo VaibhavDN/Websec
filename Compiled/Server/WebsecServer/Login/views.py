@@ -85,23 +85,52 @@ def ShowLoginPage(request):
 def SmartphoneLogin(request):
     if request.POST:
         print(request.POST)
-        negativeResponse = "<center><h3>This user doesn't exist. Please consider signing up or try again.</h3><a href="">Try again</a></center>"
-        wrongPassResponse = "<center><h3>Wrong password.</h3><a href="">Try again</a></center>"
-        if 'username' in request.POST and 'loginType' in request.POST:
+        negativeResponse = "failed"
+        wrongPassResponse = "failed"
+        username=""
+        if 'username' in request.POST and 'loginType' in request.POST and 'password' in request.POST:
             try:
                 username = request.POST['username']
+                print("Username: "+username)
                 admindetails = AdminDetails.objects.get(username=username)
             except:
+                print("No such admin exists")
                 return HttpResponse(negativeResponse)
-            saved_password = admindetails.password
-            modelsActiveStatus_all = ModelsActiveStatus.objects.all()
-            serializer = StatusSerializer(modelsActiveStatus_all, many=True)
-            response = Response(serializer.data)
-            if saved_password == request.POST['password']:
-                return response
+            if "device" in request.POST and "statusString" in request.POST:
+                if request.POST['device'] == "phone":
+                    try:
+                        user = ModelsActiveStatus.objects.get(username=request.POST['user'])
+                        user.statusString = request.POST["statusString"]
+                        print(user)
+                        if admindetails.password == request.POST['password']:
+                            print("Saved")
+                            user.save()
+                            return HttpResponse("saved")
+                        else:
+                            print("Incorrect password")
+                            return HttpResponse("Incorrect admin details")
+                    except:
+                        print("Setting for this user don't exist")
+                        return HttpResponse("Setting for this user don't exist")
+                else:
+                    print("Failed")
+                    return HttpResponse(negativeResponse)
             else:
-                return HttpResponse(wrongPassResponse)
+                saved_password = admindetails.password
+                modelsActiveStatus_all = ModelsActiveStatus.objects.all()
+                serializer = StatusSerializer(modelsActiveStatus_all, many=True)
+                print(serializer.data)
+                response = Response(serializer.data)
+                if saved_password == request.POST['password']:
+                    return response
+                else:
+                    print("Failed")
+                    return HttpResponse(wrongPassResponse)
+        else:
+            print("username, loginType or password missing")
+            return HttpResponse(negativeResponse)
     else:
+        print("Failed")
         return HttpResponse("<center>Invalid request</center>")
 
 
