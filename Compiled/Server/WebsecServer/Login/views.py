@@ -1,12 +1,14 @@
 from django.shortcuts import render
 from django.http import HttpResponse,HttpResponseRedirect
-from .models import UserDetails, AdminDetails, ModelsActiveStatus
+from .models import UserDetails, AdminDetails, ModelsActiveStatus, Logs
 import datetime
 from django.template import loader
 from django.views.decorators.csrf import csrf_exempt
 from rest_framework.decorators import api_view
-from .serializers import StatusSerializer
+from .serializers import StatusSerializer, LogSerializer
 from rest_framework.response import Response
+
+#***************************************************************************************
 
 def saveModelSettings(request):
     username = ""
@@ -31,6 +33,8 @@ def saveModelSettings(request):
     user.statusString = newStatusString
     user.save()
     return 0
+
+#***************************************************************************************
 
 def ShowLoginPage(request):
     if request.POST:
@@ -79,6 +83,8 @@ def ShowLoginPage(request):
                 return HttpResponse(wrongPassResponse)
     else:
         return render(request, 'Login/updatedloginform.html')
+
+#******************************************************************************
 
 @csrf_exempt 
 @api_view(['GET', 'POST', ])
@@ -132,5 +138,14 @@ def SmartphoneLogin(request):
     else:
         print("Failed")
         return HttpResponse("<center>Invalid request</center>")
+
+#***************************************************************************************
+
+@csrf_exempt
+@api_view(['GET', 'POST', ])
+def FetchLogs(request):
+    logs = Logs.objects.all()
+    serializer = LogSerializer(logs, many=True)
+    return Response(serializer.data)
 
 

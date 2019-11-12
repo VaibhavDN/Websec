@@ -53,10 +53,13 @@ class Dashboard : AppCompatActivity() {
         var json = JSONArray(jsonString)
         //Toast.makeText(this, json.getJSONObject(0).getString("username").toString(), Toast.LENGTH_LONG).show()
         var buttonSave = Button(this)
+        var buttonLogs = Button(this)
         var initTextView = TextView(this)
         var textView = Array<TextView>(json.length()){initTextView}
         var initCheckBox = CheckBox(this)
         var checkbox = Array<CheckBox>(json.getJSONObject(0).getString("statusString").length){initCheckBox}
+
+        //****Dropdown****
         var usernameArray = Array<String>(json.length()){""}
         for(i in 0 until(json.length()) step 1){
             usernameArray[i] = json.getJSONObject(i).getString("username").toString().capitalize()
@@ -110,16 +113,18 @@ class Dashboard : AppCompatActivity() {
                         }
                         dashboard_llayout.addView(checkbox[j])
                     }
+
+                    //****Buttons****
                     buttonSave.visibility = View.GONE
                     buttonSave = Button(applicationContext)
                     buttonSave.text = "Save settings"
                     //buttonSave.layoutParams = LinearLayout.LayoutParams(500,200)
                     buttonSave.setPadding(50,50,50,50)
-                    val params = LinearLayout.LayoutParams(
+                    var params = LinearLayout.LayoutParams(
                         LinearLayout.LayoutParams.MATCH_PARENT,
                         LinearLayout.LayoutParams.WRAP_CONTENT
                     )
-                    params.setMargins(40, 50, 40, 50)
+                    params.setMargins(40, 50, 40, 10)
                     buttonSave.layoutParams = params
                     buttonSave.setOnClickListener {
                         var saveStatusString=""
@@ -138,6 +143,20 @@ class Dashboard : AppCompatActivity() {
                         Toast.makeText(applicationContext, result, Toast.LENGTH_LONG).show()
                     }
                     dashboard_llayout.addView(buttonSave)
+
+                    buttonLogs.visibility = View.GONE
+                    buttonLogs = Button(applicationContext)
+                    buttonLogs.text = "View Logs"
+
+                    buttonLogs.setPadding(50,50,50,50)
+                    params = LinearLayout.LayoutParams(
+                        LinearLayout.LayoutParams.MATCH_PARENT,
+                        LinearLayout.LayoutParams.WRAP_CONTENT
+                    )
+                    params.setMargins(40, 20, 40, 10)
+                    buttonLogs.layoutParams = params
+                    dashboard_llayout.addView(buttonLogs)
+
                 }catch (e:Exception){
                     Toast.makeText(applicationContext, e.toString(), Toast.LENGTH_LONG).show()
                 }

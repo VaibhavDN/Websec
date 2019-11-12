@@ -20,3 +20,11 @@ class ModelsActiveStatus(models.Model):
 
     def __str__(self):
         return "Username: " + self.username + " StatusString: " + self.statusString
+
+class Logs(models.Model):
+    username = models.CharField(max_length = 30)
+    site = models.CharField(max_length = 500)
+    status = models.CharField(max_length = 30)
+
+    def __str__(self):
+        return "User: " + username + "site: " + self.site + " status: " + self.status

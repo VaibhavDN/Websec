@@ -19,13 +19,13 @@ function sendToServer(requestDetails) {
         console.log("Letting google go");
         return requestDetails.url;
     }
-    else if(urlSplit[2] != "127.0.0.1:8000" && lastDomain != urlSplit[2] && skip == 0)
+    else if(urlSplit[2] != "0.0.0.0:4000" && lastDomain != urlSplit[2] && skip == 0)
     {
         browser.webRequest.onBeforeRequest.removeListener(
         sendToServer,
         );
         lastDomain = urlSplit[2];
-        var redirectToUrl = {redirectUrl : "http://127.0.0.1:8000/runmodel?link="+requestDetails.url};
+        var redirectToUrl = {redirectUrl : "http://0.0.0.0:4000/runmodel?link="+requestDetails.url};
         //console.log("Sent: "+redirectToUrl)
         return redirectToUrl;
     }

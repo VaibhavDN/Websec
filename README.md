@@ -282,3 +282,13 @@ Vaibhav:
 
 
 **********************************************
+
+Nov 12, 2019
+
+Vaibhav:
+
+1. Log database created and api created.
+
+2. Fixed browser extension bugs.
+
+**********************************************
