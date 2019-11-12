@@ -144,6 +144,7 @@ def SmartphoneLogin(request):
 @csrf_exempt
 @api_view(['GET', 'POST', ])
 def FetchLogs(request):
+    print("Log fetch request")
     logs = Logs.objects.all()
     serializer = LogSerializer(logs, many=True)
     return Response(serializer.data)
