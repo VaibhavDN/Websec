@@ -292,3 +292,13 @@ Vaibhav:
 2. Fixed browser extension bugs.
 
 **********************************************
+
+Nov 13, 2019
+
+Vaibhav:
+
+1. Added "View history functionality" in android app.
+
+2. Fixed android UI freeze issues.
+
+**********************************************

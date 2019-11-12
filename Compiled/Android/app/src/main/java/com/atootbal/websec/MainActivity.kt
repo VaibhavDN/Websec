@@ -33,35 +33,22 @@ class MainActivity : AppCompatActivity() {
             val combinedString = username.toString()+","+password.toString()
             Toast.makeText(this,"Logging in", Toast.LENGTH_LONG).show()
             var asyncTask = Login()
-            var jsonString = asyncTask.execute(combinedString).get()
-            if(jsonString != "failed")
-            {
-                var json = JSONArray(jsonString)
-                var intent = Intent(this, Dashboard::class.java)
-                intent.putExtra("json", jsonString)
-                intent.putExtra( "username", username.toString())
-                intent.putExtra( "password", password.toString())
-                startActivity(intent)
-
-            }
-            else{
-                val loginButton = findViewById<Button>(R.id.login_button_submit)
-                loginButton.text = "Incorrect username or password"
-                Toast.makeText(this,"Login failed", Toast.LENGTH_LONG).show()
-                progressBar.visibility = View.GONE
-            }
+            var jsonString = asyncTask.execute(combinedString)
         }
     }
     inner class Login : AsyncTask<String,Void,String>() {
         override fun doInBackground(vararg input: String?): String {
             var re = ""
+            var parsedHtml = ""
+            var username = ""
+            var password = ""
             try {
                 var stringInput = Arrays.toString(input)
                 stringInput = stringInput.replace("[", "")
                 stringInput = stringInput.replace("]", "")
                 var splitString = stringInput.split(",")
-                var username = splitString[0]
-                var password = splitString[1]
+                username = splitString[0]
+                password = splitString[1]
 
                 var login = Jsoup.connect("https://webwebsec.localtunnel.me/login/phone/")
                     .ignoreContentType(true)
@@ -70,12 +57,32 @@ class MainActivity : AppCompatActivity() {
                     .data("password", password)
                     .post()
                 var html = login.html()
-                var parsedHtml = Jsoup.parse(html).body().text()
+                parsedHtml = Jsoup.parse(html).body().text()
                 re = parsedHtml
             } catch (e: Exception) {
-                return "failed"
+                parsedHtml = "failed"
             }
-            return re
+
+            var jsonString = parsedHtml
+            if(jsonString != "failed")
+            {
+                var json = JSONArray(jsonString)
+                var intent = Intent(applicationContext, Dashboard::class.java)
+                intent.putExtra("json", jsonString)
+                intent.putExtra( "username", username)
+                intent.putExtra( "password", password)
+                startActivity(intent)
+            }
+            else{
+                runOnUiThread {
+                    val loginButton = findViewById<Button>(R.id.login_button_submit)
+                    loginButton.text = "Incorrect username or password"
+                    Toast.makeText(applicationContext,"Login failed", Toast.LENGTH_LONG).show()
+                    progressBar.visibility = View.GONE
+                }
+            }
+
+            return parsedHtml
         }
 
         override fun onPreExecute() {
@@ -83,13 +90,9 @@ class MainActivity : AppCompatActivity() {
             progressBar.visibility = View.VISIBLE
         }
 
-        override fun onProgressUpdate(vararg values: Void?) {
-            super.onProgressUpdate(*values)
-        }
-
         override fun onPostExecute(result: String?) {
             super.onPostExecute(result)
-            //progressBar.visibility = View.GONE
+            progressBar.visibility = View.GONE
         }
     }
 }

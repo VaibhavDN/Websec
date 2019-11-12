@@ -1,5 +1,6 @@
 package com.atootbal.websec
 
+import android.content.Intent
 import android.graphics.Color
 import android.graphics.drawable.ColorDrawable
 import android.os.AsyncTask
@@ -18,28 +19,6 @@ import org.jsoup.Jsoup
 import java.lang.Exception
 import java.util.*
 
-class SaveStatusString : AsyncTask<String, Void, String>(){
-    override fun doInBackground(vararg saveString: String?): String {
-        var saveStatusString = Arrays.toString(saveString)
-        var stringSplit = saveStatusString.toString().replace("[","")
-        stringSplit = stringSplit.replace("]","")
-        var stringArr = stringSplit.split(",")
-        Log.d("saveString: ",stringArr.toString())
-        Log.d("saveString: ",stringArr[2])
-        var response = Jsoup.connect("https://webwebsec.localtunnel.me/login/phone/")
-            .ignoreContentType(true)
-            .data("username", stringArr[0])
-            .data("password", stringArr[1])
-            .data("user", stringArr[2])
-            .data("loginType", "adminlogin")
-            .data("device", "phone")
-            .data("statusString", stringArr[3])
-            .post()
-        var bodyText = Jsoup.parse(response.html()).body().text()
-        return bodyText
-    }
-}
-
 class Dashboard : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -49,7 +28,7 @@ class Dashboard : AppCompatActivity() {
         var jsonString = getExtras!!.getString("json")
         var adminUsername = getExtras.getString("username")
         var adminPassword = getExtras.getString("password")
-        Toast.makeText(this, adminUsername, Toast.LENGTH_SHORT).show()
+        Toast.makeText(this, "Welcome: "+adminUsername, Toast.LENGTH_SHORT).show()
         var json = JSONArray(jsonString)
         //Toast.makeText(this, json.getJSONObject(0).getString("username").toString(), Toast.LENGTH_LONG).show()
         var buttonSave = Button(this)
@@ -74,7 +53,7 @@ class Dashboard : AppCompatActivity() {
         var lastPosition = 1234
         spinner.onItemSelectedListener = object:AdapterView.OnItemSelectedListener{
             override fun onNothingSelected(parent: AdapterView<*>?) {
-
+                //pass
             }
 
             override fun onItemSelected(
@@ -90,13 +69,14 @@ class Dashboard : AppCompatActivity() {
                         checkbox[j].visibility = View.GONE
                     }
                 }
-                Toast.makeText(applicationContext, usernameArray[position], Toast.LENGTH_SHORT).show()
+                Toast.makeText(applicationContext, "Selected: "+usernameArray[position], Toast.LENGTH_SHORT).show()
                 var i=position
                 lastPosition = position
                 textView[i] = TextView(applicationContext)
                 textView[i].id = i
                 textView[i].textSize = 20f
                 textView[i].text = "Select the categories to block for: " + usernameArray[i]
+                textView[i].setTextColor(Color.rgb(102,0,153))
                 textView[i].setPadding(40,40,20,20)
                 dashboard_llayout.addView(textView[i])
                 try {
@@ -128,7 +108,7 @@ class Dashboard : AppCompatActivity() {
                     buttonSave.layoutParams = params
                     buttonSave.setOnClickListener {
                         var saveStatusString=""
-                        Toast.makeText(applicationContext, "Saving..", Toast.LENGTH_LONG).show()
+                        Toast.makeText(applicationContext, "Saving user settings..", Toast.LENGTH_LONG).show()
                         saveStatusString+=adminUsername+","+adminPassword+","+usernameArray[i].toLowerCase()+","
                         for(j in 0 until(json.getJSONObject(0).getString("statusString").length) step 1){
                             if(checkbox[j].isChecked){
@@ -139,8 +119,7 @@ class Dashboard : AppCompatActivity() {
                             }
                         }
                         var save = SaveStatusString()
-                        var result = save.execute(saveStatusString).get()
-                        Toast.makeText(applicationContext, result, Toast.LENGTH_LONG).show()
+                        var result = save.execute(saveStatusString)
                     }
                     dashboard_llayout.addView(buttonSave)
 
@@ -155,6 +134,13 @@ class Dashboard : AppCompatActivity() {
                     )
                     params.setMargins(40, 20, 40, 10)
                     buttonLogs.layoutParams = params
+                    buttonLogs.setOnClickListener {
+                        var intent = Intent(applicationContext, LogActivity::class.java)
+                        intent.putExtra("username", adminUsername)
+                        intent.putExtra("password", adminPassword)
+                        intent.putExtra("user", usernameArray[i].toLowerCase())
+                        startActivity(intent)
+                    }
                     dashboard_llayout.addView(buttonLogs)
 
                 }catch (e:Exception){
@@ -163,12 +149,38 @@ class Dashboard : AppCompatActivity() {
             }
         }
         dashboard_llayout.addView(spinner)
-        val actionBarBack = supportActionBar
+
         supportActionBar!!.setDisplayHomeAsUpEnabled(true)
         supportActionBar!!.title = "Dashboard"
     }
+
     override fun onSupportNavigateUp(): Boolean {
         onBackPressed()
         return true
+    }
+
+    inner class SaveStatusString : AsyncTask<String, Void, String>(){
+        override fun doInBackground(vararg saveString: String?): String {
+            var saveStatusString = Arrays.toString(saveString)
+            var stringSplit = saveStatusString.toString().replace("[","")
+            stringSplit = stringSplit.replace("]","")
+            var stringArr = stringSplit.split(",")
+            Log.d("saveString: ",stringArr.toString())
+            Log.d("saveString: ",stringArr[2])
+            var response = Jsoup.connect("https://webwebsec.localtunnel.me/login/phone/")
+                .ignoreContentType(true)
+                .data("username", stringArr[0])
+                .data("password", stringArr[1])
+                .data("user", stringArr[2])
+                .data("loginType", "adminlogin")
+                .data("device", "phone")
+                .data("statusString", stringArr[3])
+                .post()
+            var bodyText = Jsoup.parse(response.html()).body().text()
+            runOnUiThread {
+                Toast.makeText(applicationContext, bodyText.capitalize(), Toast.LENGTH_LONG).show()
+            }
+            return bodyText
+        }
     }
 }
