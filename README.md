@@ -302,3 +302,9 @@ Vaibhav:
 2. Fixed android UI freeze issues.
 
 **********************************************
+
+Nov 17,2019
+
+Anubhav:
+
+Added the all new User Friendly Website Design and Control Panel.
