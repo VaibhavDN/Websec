@@ -309,3 +309,11 @@ Anubhav:
 
 Added the all new User Friendly Website Design and Control Panel.
 It is located in the folder anubhav_website.
+
+*************************************************
+
+Nov 18,2019
+
+Anubhav
+
+Uploaded the flutter app. The App is fully functional with users being authenticated for firebase real time database. Logs can also be fetched but the script has to be added somewhere. Only downside is not the functional settings panel but that will be made as a dummy only to show evaluators. OK?
