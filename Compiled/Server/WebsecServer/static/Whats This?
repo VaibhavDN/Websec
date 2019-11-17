@@ -1,8 +1,0 @@
-https://stackoverflow.com/questions/12481172/django-template-img-src-not-working 
-
-This is used to serve additional files like JS, CSS, images etc.
-Setting -> STATIC_URL
-
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, "static"),
-]

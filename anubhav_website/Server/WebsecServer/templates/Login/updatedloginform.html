@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="{% static "Login/updatedlogin.css" %}">
+	<title>Log in. Welcome Back to WebSec</title>
+</head>
+<body text="white">
+	<img id='logo' src="{% static "Login/websec(3).png" %}">
+	
+	<h2 id='text'>Login</h2>
+	<div id='loginbox'>
+		<form action="" method="POST">
+			{% csrf_token %}
+			<center>
+				<span id='select'>Login Type:</span>
+				<select id='box' name="loginType"> 
+					<option value="userlogin">User Login</option>
+					<option value="adminlogin">Admin Login</option>
+				</select>
+			</center><br>
+			<img id='imga' src="{% static "Login/man.png" %}">
+			<input id='textbox' type="text" name="username" placeholder="Enter your username" required>
+			<img id='imgb' src="{% static "Login/password-lock-icon-flat-style-vector-22606269.jpg" %}">
+			<input id='passbox'type="password" name="password" placeholder="Enter your password" required>
+			<input type="submit" class="btn" value="Login">
+		</form>
+		<a id='redirect' href="http://127.0.0.1:8000/signup/">Don't have an account? Sign Up Now</a>
+
+	</div>
+
+</body>
+</html>
