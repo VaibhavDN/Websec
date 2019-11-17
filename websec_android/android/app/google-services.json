@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "834586475554",
+    "firebase_url": "https://adminv1.firebaseio.com",
+    "project_id": "adminv1",
+    "storage_bucket": "adminv1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:834586475554:android:567e528acd29aece8e1e7b",
+        "android_client_info": {
+          "package_name": "com.lifeinnutshell.websec_android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "834586475554-spp35sq1547vud9cplrd4hsteog44qac.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDP8RjLHiV9iP2_Ew1D36YrStF11DU2BVM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "834586475554-spp35sq1547vud9cplrd4hsteog44qac.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
