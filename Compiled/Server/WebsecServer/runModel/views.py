@@ -38,16 +38,44 @@ def getLink(request):
     else:
         print("Link not found")
 
-    testSitesPath = pathToModels + '/' + "TestSites.txt"
-    fobject = open(testSitesPath, "w")
-    fobject.write(link)
-    fobject.close()
-    pathToParser = pathToModels + '/' + "HTMLParser.py"
-    print(pathToModels)
-    parser = SourceFileLoader('ParserModule', pathToParser).load_module()
-    print(parser)
-    prediction1, prediction2, prediction3, prediction4, prediction5, prediction6, prediction7 = parser.startParser(
-        pathToModels, 3, request.COOKIES['username'])
+    prediction1=0
+    prediction2=0
+    prediction3=0
+    prediction4=1
+    prediction5=1
+    prediction6=0
+    prediction7=0
+
+    if(not os.path.isfile(pathToModels + "/locked_helper.txt")):
+        fobject = open(pathToModels + "/locked_helper.txt", "w")
+        fobject.write(link)
+        fobject.close()
+        helper = SourceFileLoader('HelperModule', os.path.abspath("./") + "/runModel/p2p_client.py").load_module()
+        prediction1, prediction2, prediction3, prediction4, prediction5, prediction6, prediction7 = helper.run_helper_server((link+"|"), request.COOKIES['username'])
+        try:
+            os.remove(pathToModels + "/locked_helper.txt")
+        except Exception as e:
+            print(e)
+    else:
+        counter = 0
+        while(os.path.isfile(pathToModels + "/locked.txt") and counter < 1000000):
+            print("Waiting.. Current url: "+link)
+            counter+=1
+        fobject = open(pathToModels + "/locked.txt", "w")
+        fobject.write(link)
+        fobject.close()
+
+        testSitesPath = pathToModels + '/' + "TestSites.txt"
+        fobject = open(testSitesPath, "w")
+        fobject.write(link)
+        fobject.close()
+        pathToParser = pathToModels + '/' + "HTMLParser.py"
+        print(pathToModels)
+        parser = SourceFileLoader('ParserModule', pathToParser).load_module()
+        print(parser)
+
+        prediction1, prediction2, prediction3, prediction4, prediction5, prediction6, prediction7 = parser.startParser(
+            pathToModels, 3, request.COOKIES['username'])
 
     logs = Logs()
     status = "allowed"
@@ -80,10 +108,18 @@ def getLink(request):
         logs.site = link
         logs.status = status
         logs.save()
+        try:
+            os.remove(pathToModels + "/locked.txt")
+        except Exception as e:
+            print(e)
         return HttpResponseRedirect(link)
         
     logs.username = username
     logs.site = link
     logs.status = status
     logs.save()
+    try:
+        os.remove(pathToModels + "/locked.txt")
+    except Exception as e:
+        print(e)
     return HttpResponse(returnResponse)

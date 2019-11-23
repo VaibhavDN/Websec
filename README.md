@@ -317,3 +317,17 @@ Nov 18,2019
 Anubhav
 
 Uploaded the flutter app. The App is fully functional with users being authenticated for firebase real time database. Logs can also be fetched but the script has to be added somewhere. Only downside is not the functional settings panel but that will be made as a dummy only to show evaluators. OK?
+
+*************************************************
+
+Nov 23,2019
+
+Vaibhav
+
+1. Completed load distribution functionality using socket programming. Place ModelHelper and Model_Helper_Server
+
+   folders in another device and run p2p_server.py.
+
+2. Small changes to browser extension to incorporate load distribution functionality.
+
+*************************************************

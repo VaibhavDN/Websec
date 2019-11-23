@@ -1,5 +1,5 @@
-var lastDomain = ""
-var extensions = ["jpg", "css", "png", "js", "woff", "gif", "svg", "ico"]
+var lastDomain = "";
+var extensions = ["jpg", "css", "png", "js", "woff", "gif", "svg", "ico"];
 function sendToServer(requestDetails) {
     var url = requestDetails.url;
     var urlSplit = url.split("/");
@@ -21,9 +21,9 @@ function sendToServer(requestDetails) {
     }
     else if(urlSplit[2] != "0.0.0.0:4000" && lastDomain != urlSplit[2] && skip == 0)
     {
-        browser.webRequest.onBeforeRequest.removeListener(
+        /*browser.webRequest.onBeforeRequest.removeListener(
         sendToServer,
-        );
+        );*/
         lastDomain = urlSplit[2];
         var redirectToUrl = {redirectUrl : "http://0.0.0.0:4000/runmodel?link="+requestDetails.url};
         //console.log("Sent: "+redirectToUrl)
@@ -47,6 +47,7 @@ browser.webRequest.onCompleted.addListener(
   );
 function myFunction(x) {
   console.log ("Request completed");
+  lastDomain = "";
   browser.webRequest.onBeforeRequest.addListener(
         sendToServer,
         {urls: ["<all_urls>"]},

@@ -1,0 +1,9 @@
+//tracker.shopclues.com/tracker.js
+//www.shopclues.com/assets/js/sc_tracker.js
+//cdn.shopclues.com/images/ui/js/common_header.js?ver=67
+None
+None
+//assets.adobedtm.com/a27f844e6d39b151a4c50628d74d0027a93ce93f/satelliteLib-7d2f0d5af2e6977e292dd2fe9c51476f8ebb4e6b.js
+https://static.criteo.net/js/ld/publishertag.js
+None
+None
