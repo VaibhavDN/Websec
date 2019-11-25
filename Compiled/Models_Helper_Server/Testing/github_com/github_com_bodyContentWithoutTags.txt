@@ -1,0 +1,204 @@
+
+Skip to content
+Sign up
+Why GitHub?
+Features →
+Code review
+Project management
+Integrations
+Actions
+Packages
+Security
+Team management
+Social coding
+Documentation
+Code hosting
+Customer stories →
+Security →
+Enterprise
+Explore
+Explore GitHub →
+Learn & contribute
+Topics
+Collections
+Trending
+Learning Lab
+Open source guides
+Connect with others
+Events
+Community forum
+GitHub Education
+Marketplace
+Pricing
+Plans →
+Compare plans
+Contact Sales
+Nonprofit →
+Education →
+Search
+All GitHub
+↵
+Jump to
+↵
+No suggested jump to results
+Search
+All GitHub
+↵
+Jump to
+↵
+Search
+All GitHub
+↵
+Jump to
+↵
+Sign in
+Sign up
+Built for developers
+GitHub is a development platform inspired by the way you work. From open source to business, you can host and review code, manage projects, and build software alongside 40 million developers.
+Username
+Email
+Password
+Make sure it's at least 15 characters OR at least 8 characters including a number and a lowercase letter. Learn more.
+Sign up for GitHub
+By clicking “Sign up for GitHub”, you agree to our
+Terms of Service and
+Privacy Statement. We’ll occasionally send you account related emails.
+Sign up for GitHub
+Get started with GitHub Enterprise
+Take collaboration to the next level with security and administrative features built for teams.
+Enterprise Cloud
+Leave the hosting to us.
+Try Cloud for free
+Enterprise Server
+Deploy to your environment.
+Try Server for free
+Talk to us
+Want to use both?
+Contact Sales →
+See what launched at Universe
+Say hello to our new GitHub for mobile experience, get more from GitHub Actions and Packages, and learn how we’re shaping the future of software, together.
+Explore the launches More than 2.1 million businesses and organizations use GitHub
+GitHub for teams
+A better way to work together
+GitHub brings teams together to work through problems, move ideas forward, and learn from each other along the way.
+Sign up your team →
+Write better code
+Collaboration makes perfect. The conversations and code reviews that happen in pull requests help your team share the weight of your work and improve the software you build. Learn about code review.
+Manage your chaos
+Take a deep breath. On GitHub, project management happens in issues and project boards, right alongside your code. All you have to do is mention a teammate to get them involved. Learn about project management.
+Find the right tools
+Browse and buy apps from GitHub Marketplace with your GitHub account. Find the tools you like or discover new favorites—then start using them in minutes. Learn about integrations.
+See how the world's leading companies use GitHub Enterprise.
+&nearr;
+MGM Resorts International
+Hospitality
+Read more
+→
+&nearr;
+Nationwide
+Insurance
+Read more
+→
+&nearr;
+SAP
+Business Software
+Read more
+→
+&nearr;
+Spotify
+Technology / Streaming
+Read more
+→
+Security and administration
+Your business needs, met
+From flexible hosting to granular access controls, we’ve got your security requirements covered.
+How GitHub Enterprise works →
+Learn how GitHub Enterprise works →
+Code security
+Prevent problems before they happen. Protected branches, signed commits, and required status checks protect your work and help you maintain a high standard for your code.
+Access controlled
+Encourage teams to work together while limiting access to those who need it with granular permissions and authentication through SAML/SSO and LDAP.
+Hosted where you need it
+Securely and reliably host your work on GitHub using GitHub Enterprise Cloud. Or deploy GitHub Enterprise Server in your own data centers or in a private cloud using Amazon Web Services, Azure, or Google Cloud Platform.
+Compare plans →
+Contact Sales for more information →
+Integrations
+Build on GitHub
+Customize your process with GitHub apps and an intuitive API. Integrate the tools you already use or discover new favorites to create a happier, more efficient way of working.
+Learn about integrations →
+Sometimes, there’s more than one tool for the job. Why not try something new?
+Browse GitHub Marketplace →
+Community
+Welcome home, developers
+GitHub is home to the world’s largest community of developers and their projects...
+&nearr;
+Russell Keith-Magee
+Russell Keith-Magee created BeeWare to fill a gap in his own process. Today, BeeWare is the go-to project for supporting Python on every platform.
+Read more
+→
+&nearr;
+Kris Nova
+Kris Nova quickly developed a passion for open source software. Now she gets to work on open source tooling at her day job, which includes maintaining Kubernetes Operations (kops).
+Read more
+→
+&nearr;
+Evan You
+In 2013, Evan You founded Vue, a Javascript framework funded by the community on Patreon. In 2016, Vue reached 2,000,000 downloads.
+Read more
+→
+&nearr;
+Jess Frazelle
+Jess Frazelle works on Kubernetes full-time. Previously she maintained Docker, a software containerization platform used by thousands of teams.
+Read more
+→
+...whether you’re making your first commit or sending a Rover to Mars, there’s room for you here, too.
+100M*
+repositories worldwide
+GitHub’s users create and maintain influential technologies alongside the world’s largest open source community.
+40M*
+developers worldwide
+Developers use GitHub for personal projects, from experimenting with new programming languages to hosting their life’s work.
+2.1M*
+businesses & organizations worldwide
+Businesses of all sizes use GitHub to support their development process and to securely build software.
+* As of August 2019
+Get started for free — join the millions of developers already using GitHub to share their code, work together, and build amazing things.
+Username
+Email
+Password
+Sign up for GitHub
+By clicking “Sign up for GitHub”, you agree to our
+terms of service and
+privacy statement. We’ll occasionally send you account related emails.
+Product
+Features
+Security
+Enterprise
+Customer stories
+Pricing
+Resources
+Platform
+Developer API
+Partners
+Atom
+Electron
+GitHub Desktop
+Support
+Help
+Community Forum
+Professional Services
+Learning Lab
+Status
+Contact GitHub
+Company
+About
+Blog
+Careers
+Press
+Shop
+© 2019 GitHub, Inc.
+Terms
+Privacy
+You can’t perform that action at this time.
+You signed in with another tab or window. Reload to refresh your session.
+You signed out in another tab or window. Reload to refresh your session.

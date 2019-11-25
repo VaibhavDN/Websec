@@ -1,0 +1,400 @@
+<a class="px-2 py-4 bg-blue text-white show-on-focus js-skip-to-content" href="#start-of-content" tabindex="1">Skip to content</a>
+<a aria-label="Homepage" class="mr-4" data-ga-click="(Logged out) Header, go to homepage, icon:logo-wordmark" href="https://github.com/">
+<svg aria-hidden="true" class="octicon octicon-mark-github text-white" height="32" version="1.1" viewbox="0 0 16 16" width="32"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z" fill-rule="evenodd"></path></svg>
+</a>
+<a class="d-inline-block d-lg-none f5 text-white no-underline border border-gray-dark rounded-2 px-2 py-1 mr-3 mr-sm-5" data-ga-click="(Logged out) Header, clicked Sign up, text:sign-up" data-hydro-click='{"event_type":"authentication.click","payload":{"location_in_page":"site header","repository_id":null,"auth_type":"SIGN_UP","client_id":null,"originating_request_id":"CC1C:128B:9FF2D:DC1B0:5DDBAB02","originating_url":"https://github.com/","referrer":null,"user_id":null}}' data-hydro-click-hmac="57691e9dfef94c9c8130469e2cc8866bb3e44cc87dc4fb64afc1067756b3bf78" href="/join?source=header-home">
+              Sign up
+            </a>
+<a class="py-2 lh-condensed-ultra d-block link-gray-dark no-underline h5 Bump-link--hover" data-ga-click="(Logged out) Header, go to Features" href="/features">Features <span class="Bump-link-symbol float-right text-normal text-gray-light">→</span></a>
+<a class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Code review" href="/features/code-review/">Code review</a>
+<a class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Project management" href="/features/project-management/">Project management</a>
+<a class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Integrations" href="/features/integrations">Integrations</a>
+<a class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Actions" href="/features/actions">Actions</a>
+<a class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to GitHub Packages" href="/features/packages">Packages</a>
+<a class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Security" href="/features/security">Security</a>
+<a class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Team management" href="/features#team-management">Team management</a>
+<a class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Social coding" href="/features#social-coding">Social coding</a>
+<a class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Documentation" href="/features#documentation">Documentation</a>
+<a class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Code hosting" href="/features#code-hosting">Code hosting</a>
+<a class="py-2 lh-condensed-ultra d-block no-underline link-gray-dark no-underline h5 Bump-link--hover" data-ga-click="(Logged out) Header, go to Customer stories" href="/customer-stories">Customer stories <span class="Bump-link-symbol float-right text-normal text-gray-light">→</span></a>
+<a class="py-2 lh-condensed-ultra d-block no-underline link-gray-dark no-underline h5 Bump-link--hover" data-ga-click="(Logged out) Header, go to Security" href="/security">Security <span class="Bump-link-symbol float-right text-normal text-gray-light">→</span></a>
+<a class="HeaderMenu-link no-underline py-3 d-block d-lg-inline-block" data-ga-click="(Logged out) Header, go to Enterprise" href="/enterprise">Enterprise</a>
+<a class="py-2 lh-condensed-ultra d-block link-gray-dark no-underline h5 Bump-link--hover" data-ga-click="(Logged out) Header, go to Explore" href="/explore">Explore GitHub <span class="Bump-link-symbol float-right text-normal text-gray-light">→</span></a>
+<a class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Topics" href="/topics">Topics</a>
+<a class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Collections" href="/collections">Collections</a>
+<a class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Trending" href="/trending">Trending</a>
+<a class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Learning lab" href="https://lab.github.com/">Learning Lab</a>
+<a class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Open source guides" href="https://opensource.guide">Open source guides</a>
+<a class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Events" href="https://github.com/events">Events</a>
+<a class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Community forum" href="https://github.community">Community forum</a>
+<a class="py-2 pb-0 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to GitHub Education" href="https://education.github.com">GitHub Education</a>
+<a class="HeaderMenu-link no-underline py-3 d-block d-lg-inline-block" data-ga-click="(Logged out) Header, go to Marketplace" href="/marketplace">Marketplace</a>
+<a class="pb-2 lh-condensed-ultra d-block link-gray-dark no-underline h5 Bump-link--hover" data-ga-click="(Logged out) Header, go to Pricing" href="/pricing">Plans <span class="Bump-link-symbol float-right text-normal text-gray-light">→</span></a>
+<a class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Compare plans" href="/pricing#feature-comparison">Compare plans</a>
+<a class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Contact Sales" href="https://enterprise.github.com/contact">Contact Sales</a>
+<a class="py-2 lh-condensed-ultra d-block no-underline link-gray-dark no-underline h5 Bump-link--hover" data-ga-click="(Logged out) Header, go to Nonprofits" href="/nonprofit">Nonprofit <span class="Bump-link-symbol float-right text-normal text-gray-light">→</span></a>
+<a class="py-2 pb-0 lh-condensed-ultra d-block no-underline link-gray-dark no-underline h5 Bump-link--hover" data-ga-click="(Logged out) Header, go to Education" href="https://education.github.com">Education <span class="Bump-link-symbol float-right text-normal text-gray-light">→</span></a>
+<a class="no-underline d-flex flex-auto flex-items-center jump-to-suggestions-path js-jump-to-suggestion-path js-navigation-open p-2" href="" tabindex="-1">
+<div class="jump-to-octicon js-jump-to-octicon flex-shrink-0 mr-2 text-center d-none">
+<svg aria-label="Repository" class="octicon octicon-repo flex-shrink-0 js-jump-to-octicon-repo d-none" height="16" role="img" title="Repository" version="1.1" viewbox="0 0 12 16" width="16"><path d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z" fill-rule="evenodd"></path></svg>
+<svg aria-label="Project" class="octicon octicon-project flex-shrink-0 js-jump-to-octicon-project d-none" height="16" role="img" title="Project" version="1.1" viewbox="0 0 15 16" width="16"><path d="M10 12h3V2h-3v10zm-4-2h3V2H6v8zm-4 4h3V2H2v12zm-1 1h13V1H1v14zM14 0H1a1 1 0 00-1 1v14a1 1 0 001 1h13a1 1 0 001-1V1a1 1 0 00-1-1z" fill-rule="evenodd"></path></svg>
+<svg aria-label="Search" class="octicon octicon-search flex-shrink-0 js-jump-to-octicon-search d-none" height="16" role="img" title="Search" version="1.1" viewbox="0 0 16 16" width="16"><path d="M15.7 13.3l-3.81-3.83A5.93 5.93 0 0013 6c0-3.31-2.69-6-6-6S1 2.69 1 6s2.69 6 6 6c1.3 0 2.48-.41 3.47-1.11l3.83 3.81c.19.2.45.3.7.3.25 0 .52-.09.7-.3a.996.996 0 000-1.41v.01zM7 10.7c-2.59 0-4.7-2.11-4.7-4.7 0-2.59 2.11-4.7 4.7-4.7 2.59 0 4.7 2.11 4.7 4.7 0 2.59-2.11 4.7-4.7 4.7z" fill-rule="evenodd"></path></svg>
+</div>
+<img alt="" aria-label="Team" class="avatar mr-2 flex-shrink-0 js-jump-to-suggestion-avatar d-none" height="28" src="" width="28"/>
+<div class="jump-to-suggestion-name js-jump-to-suggestion-name flex-auto overflow-hidden text-left no-wrap css-truncate css-truncate-target">
+</div>
+<div class="border rounded-1 flex-shrink-0 bg-gray px-1 text-gray-light ml-1 f6 d-none js-jump-to-badge-search">
+<span aria-label="in all of GitHub" class="js-jump-to-badge-search-text-default d-none">
+        Search
+      </span>
+<span aria-label="in all of GitHub" class="js-jump-to-badge-search-text-global d-none">
+        All GitHub
+      </span>
+<span aria-hidden="true" class="d-inline-block ml-1 v-align-middle">↵</span>
+</div>
+<div aria-hidden="true" class="border rounded-1 flex-shrink-0 bg-gray px-1 text-gray-light ml-1 f6 d-none d-on-nav-focus js-jump-to-badge-jump">
+      Jump to
+      <span class="d-inline-block ml-1 v-align-middle">↵</span>
+</div>
+</a>
+<a class="no-underline d-flex flex-auto flex-items-center jump-to-suggestions-path js-jump-to-suggestion-path js-navigation-open p-2" href="" tabindex="-1">
+<div class="jump-to-octicon js-jump-to-octicon flex-shrink-0 mr-2 text-center d-none">
+<svg aria-label="Repository" class="octicon octicon-repo flex-shrink-0 js-jump-to-octicon-repo d-none" height="16" role="img" title="Repository" version="1.1" viewbox="0 0 12 16" width="16"><path d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z" fill-rule="evenodd"></path></svg>
+<svg aria-label="Project" class="octicon octicon-project flex-shrink-0 js-jump-to-octicon-project d-none" height="16" role="img" title="Project" version="1.1" viewbox="0 0 15 16" width="16"><path d="M10 12h3V2h-3v10zm-4-2h3V2H6v8zm-4 4h3V2H2v12zm-1 1h13V1H1v14zM14 0H1a1 1 0 00-1 1v14a1 1 0 001 1h13a1 1 0 001-1V1a1 1 0 00-1-1z" fill-rule="evenodd"></path></svg>
+<svg aria-label="Search" class="octicon octicon-search flex-shrink-0 js-jump-to-octicon-search d-none" height="16" role="img" title="Search" version="1.1" viewbox="0 0 16 16" width="16"><path d="M15.7 13.3l-3.81-3.83A5.93 5.93 0 0013 6c0-3.31-2.69-6-6-6S1 2.69 1 6s2.69 6 6 6c1.3 0 2.48-.41 3.47-1.11l3.83 3.81c.19.2.45.3.7.3.25 0 .52-.09.7-.3a.996.996 0 000-1.41v.01zM7 10.7c-2.59 0-4.7-2.11-4.7-4.7 0-2.59 2.11-4.7 4.7-4.7 2.59 0 4.7 2.11 4.7 4.7 0 2.59-2.11 4.7-4.7 4.7z" fill-rule="evenodd"></path></svg>
+</div>
+<img alt="" aria-label="Team" class="avatar mr-2 flex-shrink-0 js-jump-to-suggestion-avatar d-none" height="28" src="" width="28"/>
+<div class="jump-to-suggestion-name js-jump-to-suggestion-name flex-auto overflow-hidden text-left no-wrap css-truncate css-truncate-target">
+</div>
+<div class="border rounded-1 flex-shrink-0 bg-gray px-1 text-gray-light ml-1 f6 d-none js-jump-to-badge-search">
+<span aria-label="in all of GitHub" class="js-jump-to-badge-search-text-default d-none">
+        Search
+      </span>
+<span aria-label="in all of GitHub" class="js-jump-to-badge-search-text-global d-none">
+        All GitHub
+      </span>
+<span aria-hidden="true" class="d-inline-block ml-1 v-align-middle">↵</span>
+</div>
+<div aria-hidden="true" class="border rounded-1 flex-shrink-0 bg-gray px-1 text-gray-light ml-1 f6 d-none d-on-nav-focus js-jump-to-badge-jump">
+      Jump to
+      <span class="d-inline-block ml-1 v-align-middle">↵</span>
+</div>
+</a>
+<a class="no-underline d-flex flex-auto flex-items-center jump-to-suggestions-path js-jump-to-suggestion-path js-navigation-open p-2" href="" tabindex="-1">
+<div class="jump-to-octicon js-jump-to-octicon flex-shrink-0 mr-2 text-center d-none">
+<svg aria-label="Repository" class="octicon octicon-repo flex-shrink-0 js-jump-to-octicon-repo d-none" height="16" role="img" title="Repository" version="1.1" viewbox="0 0 12 16" width="16"><path d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z" fill-rule="evenodd"></path></svg>
+<svg aria-label="Project" class="octicon octicon-project flex-shrink-0 js-jump-to-octicon-project d-none" height="16" role="img" title="Project" version="1.1" viewbox="0 0 15 16" width="16"><path d="M10 12h3V2h-3v10zm-4-2h3V2H6v8zm-4 4h3V2H2v12zm-1 1h13V1H1v14zM14 0H1a1 1 0 00-1 1v14a1 1 0 001 1h13a1 1 0 001-1V1a1 1 0 00-1-1z" fill-rule="evenodd"></path></svg>
+<svg aria-label="Search" class="octicon octicon-search flex-shrink-0 js-jump-to-octicon-search d-none" height="16" role="img" title="Search" version="1.1" viewbox="0 0 16 16" width="16"><path d="M15.7 13.3l-3.81-3.83A5.93 5.93 0 0013 6c0-3.31-2.69-6-6-6S1 2.69 1 6s2.69 6 6 6c1.3 0 2.48-.41 3.47-1.11l3.83 3.81c.19.2.45.3.7.3.25 0 .52-.09.7-.3a.996.996 0 000-1.41v.01zM7 10.7c-2.59 0-4.7-2.11-4.7-4.7 0-2.59 2.11-4.7 4.7-4.7 2.59 0 4.7 2.11 4.7 4.7 0 2.59-2.11 4.7-4.7 4.7z" fill-rule="evenodd"></path></svg>
+</div>
+<img alt="" aria-label="Team" class="avatar mr-2 flex-shrink-0 js-jump-to-suggestion-avatar d-none" height="28" src="" width="28"/>
+<div class="jump-to-suggestion-name js-jump-to-suggestion-name flex-auto overflow-hidden text-left no-wrap css-truncate css-truncate-target">
+</div>
+<div class="border rounded-1 flex-shrink-0 bg-gray px-1 text-gray-light ml-1 f6 d-none js-jump-to-badge-search">
+<span aria-label="in all of GitHub" class="js-jump-to-badge-search-text-default d-none">
+        Search
+      </span>
+<span aria-label="in all of GitHub" class="js-jump-to-badge-search-text-global d-none">
+        All GitHub
+      </span>
+<span aria-hidden="true" class="d-inline-block ml-1 v-align-middle">↵</span>
+</div>
+<div aria-hidden="true" class="border rounded-1 flex-shrink-0 bg-gray px-1 text-gray-light ml-1 f6 d-none d-on-nav-focus js-jump-to-badge-jump">
+      Jump to
+      <span class="d-inline-block ml-1 v-align-middle">↵</span>
+</div>
+</a>
+<a class="HeaderMenu-link no-underline mr-3" data-ga-click="(Logged out) Header, clicked Sign in, text:sign-in" data-hydro-click='{"event_type":"authentication.click","payload":{"location_in_page":"site header menu","repository_id":null,"auth_type":"SIGN_UP","client_id":null,"originating_request_id":"CC1C:128B:9FF2D:DC1B0:5DDBAB02","originating_url":"https://github.com/","referrer":null,"user_id":null}}' data-hydro-click-hmac="a2f04cc44261adf0873b88ba9ba2140139e0eaa93cf6be045c6d6c1c1e607629" href="/login">
+          Sign in
+        </a>
+<a class="HeaderMenu-link d-inline-block no-underline border border-gray-dark rounded-1 px-2 py-1" data-ga-click="(Logged out) Header, clicked Sign up, text:sign-up" data-hydro-click='{"event_type":"authentication.click","payload":{"location_in_page":"site header menu","repository_id":null,"auth_type":"SIGN_UP","client_id":null,"originating_request_id":"CC1C:128B:9FF2D:DC1B0:5DDBAB02","originating_url":"https://github.com/","referrer":null,"user_id":null}}' data-hydro-click-hmac="a2f04cc44261adf0873b88ba9ba2140139e0eaa93cf6be045c6d6c1c1e607629" href="/join?source=header-home">
+            Sign up
+          </a>
+<a class="text-white jumbotron-link" href="/open-source">open source</a>
+<a class="text-white jumbotron-link" href="/business">business</a>
+<a aria-label="Learn more about strong passwords" class="tooltipped tooltipped-s" href="https://help.github.com/articles/creating-a-strong-password">Learn more</a>
+<a class="" href="https://help.github.com/terms" target="_blank">Terms of Service</a>
+<a class="" href="https://help.github.com/privacy" target="_blank">Privacy Statement</a>
+<a class="btn-mktg btn-primary-mktg btn-large-mktg" data-ga-click="Signup, Attempt, location:home hero mobile" href="/join?source=button-home" rel="nofollow">Sign up for GitHub</a>
+<a class="btn-mktg mb-1 d-block d-md-inline-block text-center mt-2" data-ga-click="Home Enterprise prompt, click, text:Try Cloud for free" href="/join?plan=business_plus&amp;setup_organization=true&amp;source=home-enterprise-prompt">Try Cloud for free</a>
+<a class="btn-mktg mb-1 d-block d-md-inline-block text-center mt-2" data-ga-click="Home Enterprise prompt, click, text:Try Server for free" href="https://enterprise.github.com/trial">Try Server for free</a>
+<a class="btn-mktg btn-outline-mktg mb-1 d-block d-md-inline-block text-center mt-2 Bump-link" data-ga-click="Home Enterprise prompt, click, text:Contact Sales" href="https://enterprise.github.com/contact">Contact Sales <span class="Bump-link-symbol">→</span></a>
+<a class="btn-mktg box-shadow-medium Bump-link my-5 my-lg-0 text-mono" data-ga-click="(Logged out) Home, click, GitHub Universe Explore launches" href="http://github.blog/2019-11-13-universe-day-one">Explore the launches <span class="Bump-link-symbol"><img alt="→" src="https://github.githubassets.com/images/modules/site/icons/arrow-universe.svg" style="margin-bottom: -3px"/></span></a>
+<a class="btn-mktg btn-large-mktg btn-outline-mktg Bump-link" data-ga-click="Signup, Attempt, text:Sign up your team" data-hydro-click='{"event_type":"authentication.click","payload":{"location_in_page":"sign up your team","repository_id":null,"auth_type":"SIGN_UP","client_id":null,"originating_request_id":"CC1C:128B:9FF2D:DC1B0:5DDBAB02","originating_url":"https://github.com/","referrer":null,"user_id":null}}' data-hydro-click-hmac="9e528352f24631859353fe247dbb79e86f56ab7e9b95ec464ac51b0aedc95715" href="/join?plan=business&amp;setup_organization=true&amp;source=home">
+          Sign up your team <span class="Bump-link-symbol">→</span>
+</a>
+<a class="summarylink" href="/features/code-review">
+<div class="summarylink-illustration">
+<img alt="" class="width-fit mx-auto" src="https://github.githubassets.com/images/modules/site/home-illo-team-code.svg"/>
+</div>
+<div class="summarylink-btn d-flex flex-justify-between flex-items-center f5 text-gray-dark rounded-1 p-sm-4 my-4 my-sm-0">
+<div class="col-10">
+<h3 class="h3-mktg text-normal mb-1">Write better code</h3>
+<p class="mb-0">Collaboration makes perfect. The conversations and code reviews that happen in pull requests help your team share the weight of your work and improve the software you build. <span class="link-mktg text-blue">Learn about code review.</span></p>
+</div>
+<svg aria-hidden="true" class="octicon octicon-triangle-right text-blue" height="16" version="1.1" viewbox="0 0 6 16" width="6"><path d="M0 14l6-6-6-6v12z" fill-rule="evenodd"></path></svg>
+</div>
+</a>
+<a class="summarylink" href="/features/project-management">
+<div class="summarylink-illustration">
+<img alt="" class="width-fit mx-auto" src="https://github.githubassets.com/images/modules/site/home-illo-team-chaos.svg"/>
+</div>
+<div class="summarylink-btn d-flex flex-justify-between flex-items-center f5 text-gray-dark rounded-1 p-sm-4 my-4 my-sm-0">
+<div class="col-10">
+<h3 class="h3-mktg text-normal mb-1">Manage your chaos</h3>
+<p class="mb-0">Take a deep breath. On GitHub, project management happens in issues and project boards, right alongside your code. All you have to do is mention a teammate to get them involved. <span class="link-mktg text-blue">Learn about project management.</span></p>
+</div>
+<svg aria-hidden="true" class="octicon octicon-triangle-right text-blue" height="16" version="1.1" viewbox="0 0 6 16" width="6"><path d="M0 14l6-6-6-6v12z" fill-rule="evenodd"></path></svg>
+</div>
+</a>
+<a class="summarylink" href="/features/integrations">
+<div class="summarylink-illustration">
+<img alt="" class="width-fit mx-auto" src="https://github.githubassets.com/images/modules/site/home-illo-team-tools.svg"/>
+</div>
+<div class="summarylink-btn d-flex flex-justify-between flex-items-center f5 text-gray-dark rounded-1 p-sm-4 my-4 my-sm-0">
+<div class="col-10">
+<h3 class="h3-mktg text-normal mb-1">Find the right tools</h3>
+<p class="mb-0">Browse and buy apps from GitHub Marketplace with your GitHub account. Find the tools you like or discover new favorites—then start using them in minutes. <span class="link-mktg text-blue">Learn about integrations.</span></p>
+</div>
+<svg aria-hidden="true" class="octicon octicon-triangle-right text-blue" height="16" version="1.1" viewbox="0 0 6 16" width="6"><path d="M0 14l6-6-6-6v12z" fill-rule="evenodd"></path></svg>
+</div>
+</a>
+<a class="Bump-link customer-story-card bg-white rounded-1 px-3 pt-3 no-underline d-flex flex-column position-relative height-full" href="/customer-stories/mgm-resorts">
+<div class="customer-story-card-hero position-relative rounded-1" style="background-image: url(https://customer-stories-feed.github.com/customer_stories/mgm-resorts/hero.jpg);">
+<div class="customer-story-btn position-absolute top-0 right-0 mt-2 mr-2" role="button">
+<span class="btn-mktg mx-auto py-2 px-3" role="button">
+<span class="f2">&amp;nearr;</span>
+</span>
+</div>
+</div>
+<div class="pt-3 d-flex flex-column flex-auto">
+<h1 class="h4-mktg text-gray-dark mb-1">MGM Resorts International</h1>
+<p class="text-gray f6 flex-auto">
+<span class="d-block mb-2">
+            Hospitality
+          </span>
+</p>
+<div class="d-flex width-full f5 border-top flex-justify-between py-3 text-blue-mktg">
+<span>Read more</span>
+<span class="Bump-link-symbol">→</span>
+</div>
+</div>
+</a>
+<a class="Bump-link customer-story-card bg-white rounded-1 px-3 pt-3 no-underline d-flex flex-column position-relative height-full" href="/customer-stories/nationwide">
+<div class="customer-story-card-hero position-relative rounded-1" style="background-image: url(https://customer-stories-feed.github.com/customer_stories/nationwide/nw_hero.jpg);">
+<div class="customer-story-btn position-absolute top-0 right-0 mt-2 mr-2" role="button">
+<span class="btn-mktg mx-auto py-2 px-3" role="button">
+<span class="f2">&amp;nearr;</span>
+</span>
+</div>
+</div>
+<div class="pt-3 d-flex flex-column flex-auto">
+<h1 class="h4-mktg text-gray-dark mb-1">Nationwide</h1>
+<p class="text-gray f6 flex-auto">
+<span class="d-block mb-2">
+            Insurance
+          </span>
+</p>
+<div class="d-flex width-full f5 border-top flex-justify-between py-3 text-blue-mktg">
+<span>Read more</span>
+<span class="Bump-link-symbol">→</span>
+</div>
+</div>
+</a>
+<a class="Bump-link customer-story-card bg-white rounded-1 px-3 pt-3 no-underline d-flex flex-column position-relative height-full" href="/customer-stories/sap">
+<div class="customer-story-card-hero position-relative rounded-1" style="background-image: url(https://customer-stories-feed.github.com/customer_stories/sap/sap6.jpg);">
+<div class="customer-story-btn position-absolute top-0 right-0 mt-2 mr-2" role="button">
+<span class="btn-mktg mx-auto py-2 px-3" role="button">
+<span class="f2">&amp;nearr;</span>
+</span>
+</div>
+</div>
+<div class="pt-3 d-flex flex-column flex-auto">
+<h1 class="h4-mktg text-gray-dark mb-1">SAP</h1>
+<p class="text-gray f6 flex-auto">
+<span class="d-block mb-2">
+            Business Software
+          </span>
+</p>
+<div class="d-flex width-full f5 border-top flex-justify-between py-3 text-blue-mktg">
+<span>Read more</span>
+<span class="Bump-link-symbol">→</span>
+</div>
+</div>
+</a>
+<a class="Bump-link customer-story-card bg-white rounded-1 px-3 pt-3 no-underline d-flex flex-column position-relative height-full" href="/customer-stories/spotify">
+<div class="customer-story-card-hero position-relative rounded-1" style="background-image: url(https://customer-stories-feed.github.com/customer_stories/spotify/spotifyhero.jpg);">
+<div class="customer-story-btn position-absolute top-0 right-0 mt-2 mr-2" role="button">
+<span class="btn-mktg mx-auto py-2 px-3" role="button">
+<span class="f2">&amp;nearr;</span>
+</span>
+</div>
+</div>
+<div class="pt-3 d-flex flex-column flex-auto">
+<h1 class="h4-mktg text-gray-dark mb-1">Spotify</h1>
+<p class="text-gray f6 flex-auto">
+<span class="d-block mb-2">
+            Technology / Streaming
+          </span>
+</p>
+<div class="d-flex width-full f5 border-top flex-justify-between py-3 text-blue-mktg">
+<span>Read more</span>
+<span class="Bump-link-symbol">→</span>
+</div>
+</div>
+</a>
+<a class="btn-mktg btn-large-mktg btn-outline-mktg mx-auto Bump-link" data-ga-click="Home Enterprise, click, text:Learn how GitHub Enterprise works" href="/enterprise">
+<span class="d-sm-none">How GitHub Enterprise works <span class="Bump-link-symbol">→</span></span>
+<span class="d-none d-sm-inline">Learn how GitHub Enterprise works <span class="Bump-link-symbol">→</span></span>
+</a>
+<a class="d-block no-underline Bump-link" data-ga-click="Home Enterprise, click, text:Compare plans" href="/pricing">Compare plans <span class="Bump-link-symbol">→</span></a>
+<a class="d-block no-underline Bump-link" data-ga-click="Home Enterprise, click, text:Contact Sales for more information" href="https://enterprise.github.com/contact">Contact Sales for more information <span class="Bump-link-symbol">→</span></a>
+<a class="btn-mktg btn-large-mktg btn-outline-mktg mx-auto Bump-link" href="/features/integrations">Learn about integrations <span class="Bump-link-symbol">→</span></a>
+<a class="no-underline Bump-link" data-ga-click="Marketplace, click, text:Browse GitHub Marketplace" href="/marketplace">
+          Browse GitHub Marketplace <span class="Bump-link-symbol">→</span>
+</a>
+<a class="Bump-link customer-story-card bg-white rounded-1 px-3 pt-3 no-underline d-flex flex-column position-relative height-full" href="/customer-stories/freakboy3742">
+<div class="customer-story-card-hero position-relative rounded-1" style="background-image: url(https://customer-stories-feed.github.com/customer_stories/freakboy3742/hero.jpg);">
+<div class="customer-story-btn position-absolute top-0 right-0 mt-2 mr-2" role="button">
+<span class="btn-mktg mx-auto py-2 px-3" role="button">
+<span class="f2">&amp;nearr;</span>
+</span>
+</div>
+</div>
+<div class="pt-3 d-flex flex-column flex-auto">
+<h1 class="h4-mktg text-gray-dark mb-1">Russell Keith-Magee</h1>
+<p class="text-gray f6 flex-auto">
+          Russell Keith-Magee created BeeWare to fill a gap in his own process. Today, BeeWare is the go-to project for supporting Python on every platform.
+      </p>
+<div class="d-flex width-full f5 border-top flex-justify-between py-3 text-blue-mktg">
+<span>Read more</span>
+<span class="Bump-link-symbol">→</span>
+</div>
+</div>
+</a>
+<a class="Bump-link customer-story-card bg-white rounded-1 px-3 pt-3 no-underline d-flex flex-column position-relative height-full" href="/customer-stories/kris-nova">
+<div class="customer-story-card-hero position-relative rounded-1" style="background-image: url(https://customer-stories-feed.github.com/customer_stories/kris-nova/hero.jpg);">
+<div class="customer-story-btn position-absolute top-0 right-0 mt-2 mr-2" role="button">
+<span class="btn-mktg mx-auto py-2 px-3" role="button">
+<span class="f2">&amp;nearr;</span>
+</span>
+</div>
+</div>
+<div class="pt-3 d-flex flex-column flex-auto">
+<h1 class="h4-mktg text-gray-dark mb-1">Kris Nova</h1>
+<p class="text-gray f6 flex-auto">
+          Kris Nova quickly developed a passion for open source software. Now she gets to work on open source tooling at her day job, which includes maintaining Kubernetes Operations (kops).
+      </p>
+<div class="d-flex width-full f5 border-top flex-justify-between py-3 text-blue-mktg">
+<span>Read more</span>
+<span class="Bump-link-symbol">→</span>
+</div>
+</div>
+</a>
+<a class="Bump-link customer-story-card bg-white rounded-1 px-3 pt-3 no-underline d-flex flex-column position-relative height-full" href="/customer-stories/yyx990803">
+<div class="customer-story-card-hero position-relative rounded-1" style="background-image: url(https://customer-stories-feed.github.com/customer_stories/yyx990803/hero.jpg);">
+<div class="customer-story-btn position-absolute top-0 right-0 mt-2 mr-2" role="button">
+<span class="btn-mktg mx-auto py-2 px-3" role="button">
+<span class="f2">&amp;nearr;</span>
+</span>
+</div>
+</div>
+<div class="pt-3 d-flex flex-column flex-auto">
+<h1 class="h4-mktg text-gray-dark mb-1">Evan You</h1>
+<p class="text-gray f6 flex-auto">
+          In 2013, Evan You founded Vue, a Javascript framework funded by the community on Patreon. In 2016, Vue reached 2,000,000 downloads.
+      </p>
+<div class="d-flex width-full f5 border-top flex-justify-between py-3 text-blue-mktg">
+<span>Read more</span>
+<span class="Bump-link-symbol">→</span>
+</div>
+</div>
+</a>
+<a class="Bump-link customer-story-card bg-white rounded-1 px-3 pt-3 no-underline d-flex flex-column position-relative height-full" href="/customer-stories/jessfraz">
+<div class="customer-story-card-hero position-relative rounded-1" style="background-image: url(https://customer-stories-feed.github.com/customer_stories/jessfraz/hero.jpg);">
+<div class="customer-story-btn position-absolute top-0 right-0 mt-2 mr-2" role="button">
+<span class="btn-mktg mx-auto py-2 px-3" role="button">
+<span class="f2">&amp;nearr;</span>
+</span>
+</div>
+</div>
+<div class="pt-3 d-flex flex-column flex-auto">
+<h1 class="h4-mktg text-gray-dark mb-1">Jess Frazelle</h1>
+<p class="text-gray f6 flex-auto">
+          Jess Frazelle works on Kubernetes full-time. Previously she maintained Docker, a software containerization platform used by thousands of teams.
+      </p>
+<div class="d-flex width-full f5 border-top flex-justify-between py-3 text-blue-mktg">
+<span>Read more</span>
+<span class="Bump-link-symbol">→</span>
+</div>
+</div>
+</a>
+<a class="d-inline-block summarylink" href="/open-source">
+<div class="circle summary-circle d-flex flex-column flex-justify-center text-center p-4 mx-auto mt-6 mb-3 m-md-3 bg-orange box-shadow-extra-large">
+<span class="d-block h0-mktg text-normal text-white lh-condensed-ultra mb-1">100M<sup class="f2-light">*</sup></span>
+<span class="h5 text-white lh-condensed">repositories worldwide</span>
+</div>
+<div class="summarylink-btn d-flex flex-justify-between flex-items-center f5 text-gray-dark rounded-1 p-sm-4">
+<p class="col-10 mb-0">GitHub’s users create and maintain influential technologies alongside the world’s largest <span class="text-orange">open source community</span>.</p>
+<svg aria-hidden="true" class="octicon octicon-triangle-right text-orange-light" height="16" version="1.1" viewbox="0 0 6 16" width="6"><path d="M0 14l6-6-6-6v12z" fill-rule="evenodd"></path></svg>
+</div>
+</a>
+<a class="d-inline-block summarylink" href="/personal">
+<div class="circle summary-circle d-flex flex-column flex-justify-center text-center p-4 mx-auto mt-6 mb-3 m-md-3 bg-blue box-shadow-extra-large">
+<span class="d-block h0-mktg text-normal text-white lh-condensed-ultra mb-1">40M<sup class="f2-light">*</sup></span>
+<span class="h5 text-white lh-condensed">developers worldwide</span>
+</div>
+<div class="summarylink-btn d-flex flex-justify-between flex-items-center f5 text-gray-dark rounded-1 p-sm-4">
+<p class="col-10 mb-0"><span class="text-blue">Developers</span> use GitHub for personal projects, from experimenting with new programming languages to hosting their life’s work.</p>
+<svg aria-hidden="true" class="octicon octicon-triangle-right text-blue" height="16" version="1.1" viewbox="0 0 6 16" width="6"><path d="M0 14l6-6-6-6v12z" fill-rule="evenodd"></path></svg>
+</div>
+</a>
+<a class="d-inline-block summarylink" href="/business">
+<div class="circle summary-circle d-flex flex-column flex-justify-center text-center p-4 mx-auto mt-6 mb-3 m-md-3 bg-purple box-shadow-extra-large">
+<span class="d-block h1-mktg text-normal text-white lh-condensed-ultra my-1">2.1M<sup class="f3-light">*</sup></span>
+<span class="h5 text-white lh-condensed">businesses &amp; organizations worldwide</span>
+</div>
+<div class="summarylink-btn d-flex flex-justify-between flex-items-center f5 text-gray-dark rounded-1 p-sm-4">
+<p class="col-10 mb-0"><span class="text-purple">Businesses</span> of all sizes use GitHub to support their development process and to securely build software.</p>
+<svg aria-hidden="true" class="octicon octicon-triangle-right text-purple" height="16" version="1.1" viewbox="0 0 6 16" width="6"><path d="M0 14l6-6-6-6v12z" fill-rule="evenodd"></path></svg>
+</div>
+</a>
+<a class="text-white" href="https://help.github.com/terms" target="_blank">terms of service</a>
+<a class="text-white" href="https://help.github.com/privacy" target="_blank">privacy statement</a>
+<a aria-label="Go to GitHub homepage" class="text-gray-dark" data-ga-click="Footer, go to home, text:home" href="/">
+<svg aria-hidden="true" class="octicon octicon-logo-github" height="30" version="1.1" viewbox="0 0 45 16" width="84"><path d="M18.53 12.03h-.02c.009 0 .015.01.024.011h.006l-.01-.01zm.004.011c-.093.001-.327.05-.574.05-.78 0-1.05-.36-1.05-.83V8.13h1.59c.09 0 .16-.08.16-.19v-1.7c0-.09-.08-.17-.16-.17h-1.59V3.96c0-.08-.05-.13-.14-.13h-2.16c-.09 0-.14.05-.14.13v2.17s-1.09.27-1.16.28c-.08.02-.13.09-.13.17v1.36c0 .11.08.19.17.19h1.11v3.28c0 2.44 1.7 2.69 2.86 2.69.53 0 1.17-.17 1.27-.22.06-.02.09-.09.09-.16v-1.5a.177.177 0 00-.146-.18zM42.23 9.84c0-1.81-.73-2.05-1.5-1.97-.6.04-1.08.34-1.08.34v3.52s.49.34 1.22.36c1.03.03 1.36-.34 1.36-2.25zm2.43-.16c0 3.43-1.11 4.41-3.05 4.41-1.64 0-2.52-.83-2.52-.83s-.04.46-.09.52c-.03.06-.08.08-.14.08h-1.48c-.1 0-.19-.08-.19-.17l.02-11.11c0-.09.08-.17.17-.17h2.13c.09 0 .17.08.17.17v3.77s.82-.53 2.02-.53l-.01-.02c1.2 0 2.97.45 2.97 3.88zm-8.72-3.61h-2.1c-.11 0-.17.08-.17.19v5.44s-.55.39-1.3.39-.97-.34-.97-1.09V6.25c0-.09-.08-.17-.17-.17h-2.14c-.09 0-.17.08-.17.17v5.11c0 2.2 1.23 2.75 2.92 2.75 1.39 0 2.52-.77 2.52-.77s.05.39.08.45c.02.05.09.09.16.09h1.34c.11 0 .17-.08.17-.17l.02-7.47c0-.09-.08-.17-.19-.17zm-23.7-.01h-2.13c-.09 0-.17.09-.17.2v7.34c0 .2.13.27.3.27h1.92c.2 0 .25-.09.25-.27V6.23c0-.09-.08-.17-.17-.17zm-1.05-3.38c-.77 0-1.38.61-1.38 1.38 0 .77.61 1.38 1.38 1.38.75 0 1.36-.61 1.36-1.38 0-.77-.61-1.38-1.36-1.38zm16.49-.25h-2.11c-.09 0-.17.08-.17.17v4.09h-3.31V2.6c0-.09-.08-.17-.17-.17h-2.13c-.09 0-.17.08-.17.17v11.11c0 .09.09.17.17.17h2.13c.09 0 .17-.08.17-.17V8.96h3.31l-.02 4.75c0 .09.08.17.17.17h2.13c.09 0 .17-.08.17-.17V2.6c0-.09-.08-.17-.17-.17zM8.81 7.35v5.74c0 .04-.01.11-.06.13 0 0-1.25.89-3.31.89-2.49 0-5.44-.78-5.44-5.92S2.58 1.99 5.1 2c2.18 0 3.06.49 3.2.58.04.05.06.09.06.14L7.94 4.5c0 .09-.09.2-.2.17-.36-.11-.9-.33-2.17-.33-1.47 0-3.05.42-3.05 3.73s1.5 3.7 2.58 3.7c.92 0 1.25-.11 1.25-.11v-2.3H4.88c-.11 0-.19-.08-.19-.17V7.35c0-.09.08-.17.19-.17h3.74c.11 0 .19.08.19.17z" fill-rule="evenodd"></path></svg>
+</a>
+<a class="link-gray" data-ga-click="Footer, go to features, text:features" href="/features">Features</a>
+<a class="link-gray" data-ga-click="Footer, go to security, text:security" href="/security">Security</a>
+<a class="link-gray" data-ga-click="Footer, go to enterprise, text:enterprise" href="/enterprise">Enterprise</a>
+<a class="link-gray" data-ga-click="Footer, go to customer stories, text:customer stories" href="/customer-stories">Customer stories</a>
+<a class="link-gray" data-ga-click="Footer, go to pricing, text:pricing" href="/pricing">Pricing</a>
+<a class="link-gray" data-ga-click="Footer, go to resources, text:resources" href="https://resources.github.com">Resources</a>
+<a class="link-gray" data-ga-click="Footer, go to api, text:api" href="https://developer.github.com">Developer API</a>
+<a class="link-gray" data-ga-click="Footer, go to partner, text:partner" href="http://partner.github.com/">Partners</a>
+<a class="link-gray" data-ga-click="Footer, go to atom, text:atom" href="https://atom.io">Atom</a>
+<a class="link-gray" data-ga-click="Footer, go to electron, text:electron" href="http://electron.atom.io/">Electron</a>
+<a class="link-gray" data-ga-click="Footer, go to desktop, text:desktop" href="https://desktop.github.com/">GitHub Desktop</a>
+<a class="link-gray" data-ga-click="Footer, go to help, text:help" href="https://help.github.com">Help</a>
+<a class="link-gray" data-ga-click="Footer, go to community, text:community" href="https://github.community">Community Forum</a>
+<a class="link-gray" data-ga-click="Footer, go to professional services, text:professional services" href="https://services.github.com/">Professional Services</a>
+<a class="link-gray" data-ga-click="Footer, go to learning lab, text:learning lab" href="https://lab.github.com/">Learning Lab</a>
+<a class="link-gray" data-ga-click="Footer, go to status, text:status" href="https://githubstatus.com/">Status</a>
+<a class="link-gray" data-ga-click="Footer, go to contact, text:contact" href="https://github.com/contact">Contact GitHub</a>
+<a class="link-gray" data-ga-click="Footer, go to about, text:about" href="https://github.com/about">About</a>
+<a class="link-gray" data-ga-click="Footer, go to blog, text:blog" href="https://github.blog">Blog</a>
+<a class="link-gray" data-ga-click="Footer, go to careers, text:careers" href="/about/careers">Careers</a>
+<a class="link-gray" data-ga-click="Footer, go to press, text:press" href="/about/press">Press</a>
+<a class="link-gray" data-ga-click="Footer, go to shop, text:shop" href="https://shop.github.com">Shop</a>
+<a data-ga-click="Footer, go to Twitter, text:twitter" href="https://twitter.com/github" style="color: #959da5;" title="GitHub on Twitter"><svg class="d-block" height="18" viewbox="0 0 273.5 222.3" xmlns="http://www.w3.org/2000/svg"><path d="M273.5 26.3a109.77 109.77 0 0 1-32.2 8.8 56.07 56.07 0 0 0 24.7-31 113.39 113.39 0 0 1-35.7 13.6 56.1 56.1 0 0 0-97 38.4 54 54 0 0 0 1.5 12.8A159.68 159.68 0 0 1 19.1 10.3a56.12 56.12 0 0 0 17.4 74.9 56.06 56.06 0 0 1-25.4-7v.7a56.11 56.11 0 0 0 45 55 55.65 55.65 0 0 1-14.8 2 62.39 62.39 0 0 1-10.6-1 56.24 56.24 0 0 0 52.4 39 112.87 112.87 0 0 1-69.7 24 119 119 0 0 1-13.4-.8 158.83 158.83 0 0 0 86 25.2c103.2 0 159.6-85.5 159.6-159.6 0-2.4-.1-4.9-.2-7.3a114.25 114.25 0 0 0 28.1-29.1" fill="currentColor"></path></svg>
+</a>
+<a data-ga-click="Footer, go to Facebook, text:facebook" href="https://www.facebook.com/GitHub" style="color: #959da5;" title="GitHub on Facebook"><svg class="d-block" height="18" viewbox="0 0 15.3 15.4" xmlns="http://www.w3.org/2000/svg"><path d="M14.5 0H.8a.88.88 0 0 0-.8.9v13.6a.88.88 0 0 0 .8.9h7.3v-6h-2V7.1h2V5.4a2.87 2.87 0 0 1 2.5-3.1h.5a10.87 10.87 0 0 1 1.8.1v2.1h-1.3c-1 0-1.1.5-1.1 1.1v1.5h2.3l-.3 2.3h-2v5.9h3.9a.88.88 0 0 0 .9-.8V.8a.86.86 0 0 0-.8-.8z" fill="currentColor"></path></svg>
+</a>
+<a data-ga-click="Footer, go to YouTube, text:youtube" href="https://www.youtube.com/github" style="color: #959da5;" title="GitHub on YouTube"><svg class="d-block" height="16" viewbox="0 0 19.17 13.6" xmlns="http://www.w3.org/2000/svg"><path d="M18.77 2.13A2.4 2.4 0 0 0 17.09.42C15.59 0 9.58 0 9.58 0a57.55 57.55 0 0 0-7.5.4A2.49 2.49 0 0 0 .39 2.13 26.27 26.27 0 0 0 0 6.8a26.15 26.15 0 0 0 .39 4.67 2.43 2.43 0 0 0 1.69 1.71c1.52.42 7.5.42 7.5.42a57.69 57.69 0 0 0 7.51-.4 2.4 2.4 0 0 0 1.68-1.71 25.63 25.63 0 0 0 .4-4.67 24 24 0 0 0-.4-4.69zM7.67 9.71V3.89l5 2.91z" fill="currentColor"></path></svg>
+</a>
+<a data-ga-click="Footer, go to Linkedin, text:linkedin" href="https://www.linkedin.com/company/github" style="color: #959da5;" title="GitHub on Linkedin"><svg class="d-block" height="18" viewbox="0 0 19 18" xmlns="http://www.w3.org/2000/svg"><path d="M3.94 2A2 2 0 1 1 2 0a2 2 0 0 1 1.94 2zM4 5.48H0V18h4zm6.32 0H6.34V18h3.94v-6.57c0-3.66 4.77-4 4.77 0V18H19v-7.93c0-6.17-7.06-5.94-8.72-2.91z" fill="currentColor"></path></svg>
+</a>
+<a data-ga-click="Footer, go to github's org, text:github" href="https://github.com/github" style="color: #959da5;" title="GitHub's organization"><svg alt="GitHub" aria-hidden="true" class="octicon octicon-mark-github d-block" height="20" version="1.1" viewbox="0 0 16 16" width="20"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z" fill-rule="evenodd"></path></svg></a>
+<a class="link-gray" data-ga-click="Footer, go to terms, text:terms" href="/site/terms">Terms</a>
+<a class="link-gray" data-ga-click="Footer, go to privacy, text:privacy" href="/site/privacy">Privacy</a>
+<a href="">Reload</a>
+<a href="">Reload</a>
