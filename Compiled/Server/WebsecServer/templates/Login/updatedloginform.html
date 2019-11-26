@@ -6,23 +6,22 @@
 	<title>Log in. Welcome Back to WebSec</title>
 </head>
 <body text="white">
-	<img id='logo' src="{% static "Login/websec(3).png" %}">
-	
-	<h2 id='text'>Login</h2>
-	<div id='loginbox'>
+
+	<div class="loginbody" style="border: 0px solid red; background-color: rgba(183, 73, 90, 0.5); padding: 20px 30px 20px 30px;">
+		<h2 id='text'>Login</h2>
 		<form action="" method="POST">
 			{% csrf_token %}
 			<center>
-				<span id='select'>Login Type:</span>
-				<select id='box' name="loginType"> 
+				<span style="color: rgb(24, 5, 37);">Login Type:</span>
+				<select name="loginType"> <!-- style="background-color:rgba(183, 73, 90, 0.5); color: #FFF;"-->
 					<option value="userlogin">User Login</option>
 					<option value="adminlogin">Admin Login</option>
 				</select>
 			</center><br>
-			<img id='imga' src="{% static "Login/man.png" %}">
-			<input id='textbox' type="text" name="username" placeholder="Enter your username" required>
+			<img id='imga' src="{% static "Login/user_avatar_profile_login_button_account_member-512.png" %}">
+			<input type="text" name="username" placeholder="Enter your Username" required>
 			<img id='imgb' src="{% static "Login/password-lock-icon-flat-style-vector-22606269.jpg" %}">
-			<input id='passbox'type="password" name="password" placeholder="Enter your password" required>
+			<input type="password" name="password" placeholder="Enter your password" required>
 			<input type="submit" class="btn" value="Login">
 		</form>
 		<a id='redirect' href="http://0.0.0.0:4000/signup/">Don't have an account? Sign Up Now</a>

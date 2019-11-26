@@ -2,137 +2,78 @@ body
 {
 	margin:0;
 	padding: 0;
-	background-image: url('ss.png');
-	background-size:cover;
+	background-image: url('art-black-background-blur-1040499.jpg');
+	background-size: cover;
 }
-
+.loginbody
+{
+	left: 40%;
+	top: 5%;
+	width: 250px;
+	height: 500px;
+	position: absolute;
+}
 #text
 {
+	font-family: sans-serif;
 	font-size: 60px;
-	position: absolute;
-	top: 1px;
-	left: 67%;
-	color:#0099cc;
-	border-bottom: 8px solid green;
+	color: rgb(1, 19, 43);
+	border-bottom: 0px solid;
+	border-color: rgb(251, 188, 127);
+	text-align: center;
 }
 input
 {
-	top: 90px;
+	top: 5px;
 	position: relative;
 	width: 100%;
-	background: none;
-	border: none;
-    border-bottom-color: currentcolor;
-    border-bottom-style: none;
-    border-bottom-width: medium;
+	background:rgb(1, 19, 43);
+	border:none;
 	outline: none;
 	font-family: sans-serif;
 	font-size: 18px;
+	border-bottom: 2px solid;
+	border-color: #adebad;
 	margin-bottom: 10px;
 	padding: none;
-	color:
-	red;
-	text-align: center;
-	border-bottom: 2px solid green;
-	left: 55%;
-	
-	
-	
-	
+	color: aliceblue;
 }
 input::placeholder
 {
-	color:  #4d79ff;
+	color:  #ffff;
 	font-weight: bold;
 	text-align: center;
 
 }
 #imga
 {
-	width: 100px;
-	height: 120px;
-	top: 50px;
+	width: 30px;
+	height: 30px;
+	top: 0px;
 	position: relative;
-	border-radius: 80%;
-	left: 770px;
 }
 #imgb
 {
-	width: 100px;
-	height: 120px;
-	top: 120px;
+	width: 30px;
+	height: 30px;
+	top: 0px;
 	position: relative;
 	border-radius: 50%;
-	left: 770px;
 }
 .btn
 {
-	top: 170px;
-	left: 420px;
+	top: 10px;
+	left: 0px;
 	position: relative;
 	font-family: sans-serif;
 	font-size: 30px;
-	color:#ffff;
-	border: 4px fgreen;
-	border-bottom: none;
-
+	color: #ffff;
 }
 #redirect
 {
 	font-family: sans-serif;
-	font-size: 22px;
+	font-size: 14px;
 	color: rgb(1, 19, 43);
-	top: 175px;
-	position: relative;
-	color:#cc5200;
-	left: 320px;
-}
-#logo{
-	height: 300px;
-    width: 700px;
-    top: 300px;
-    position: relative;
-}
-
-#loginbox{
-	position: absolute;
-	
-	width: 800px;
-	height: 500px;
-	top: 200px;
-	left: 30%;
-
-}
-#select{
-	color:#f06;
-	font-size: 32px;
-	left: 76%;
-	position: absolute;
-
-}
-
-#textbox{
-	width: 100%;
-	overflow: hidden;
-	border-top: none;
-	border-bottom: 2px solid green;
-	font-size: 20px;
-	padding: 8px;
-}
-#passbox{
-	width: 100%;
-	overflow: hidden;
-	border-top: none;
-	border-bottom: 2px solid green;
-	font-size: 20px;
-	padding: 8px;
-	top: 140px;
-	position: relative;
-	
-}
-
-#box{
-	left: 810px;
-	position: absolute;
 	top: 10px;
+	position: relative;
 }

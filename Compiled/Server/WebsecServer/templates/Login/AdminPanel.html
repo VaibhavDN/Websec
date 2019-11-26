@@ -1,30 +1,22 @@
-{% load static %}
 <html>
   <head>
-    <link rel="stylesheet" type="text/css" href="{% static "Login/admin.css" %}">
     <title>Admin Panel</title>
   </head>
   <body>
-    <img id='logo' src="{% static "Login/websec(3).png" %}">
-    <h3 id='admin' ><center>Admin Panel</center></h3>
-    <h3 id='warning'>Select the categories of Website which you want to block</h3>>
+    <h3><center>Admin Panel</center></h3>
     <form action="" method="POST">
     {% csrf_token %}
-    <h2 id='selection'>Select user</h2>>: 
+    Select user: 
     <select name="selectUser" id="selectUser_id" onchange="loadNewStatus()">
       {% for user in  modelsActiveStatus_all %}
         <option value="{{ user.username }}">{{ user.username }}</option>
       {% endfor %}
     </select>
-    <div id='block'>
 
-
-
-      {% with 'game shopping payment movie video tech entertainment' as modelsList%}
-        {% for models in modelsList.split %}
+    {% with 'game shopping payment movie video tech entertainment' as modelsList%}
+      {% for models in modelsList.split %}
         <br><input type="checkbox" id="{{ models }}" name="{{ models }}" value="{{ models }}"> {{ models }}
-      {% endfor %}  
-      </div>    
+      {% endfor %}      
       
       <script type="text/javascript">
         loadNewStatus();  //For first time the page is loaded
@@ -56,7 +48,7 @@
     {% endwith %}
 
     <br>
-    <input id='btn' type="submit" value="Submit">
+    <input type="submit" value="Submit">
   </form>
   </body>
 </html>
