@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('admin.png');
+    background-size: cover;
+}
+#admin{
+	color:blue;
+	font-size: 24px;
+	position: absolute;
+	right: 310px;
+	top: 20px;
+}
+#selectUser_id{
+	right: 300px;
+	position: absolute;
+	top: 95px;
+}
+#selection{
+	right: 410px;
+	position: absolute;
+	top: 80px;
+	font-size: 18px;
+	color: green;
+
+}
+#body{
+	color: white;
+}
+#game.text{
+	color: white;
+}
+#block{
+	color: white;
+	position: absolute;
+	left: 850px;
+	color: red;
+	top: 190px;
+	font-size: 20px;
+}
+#btn{
+	top: 450px;
+	position: absolute;
+	left: 850px;
+	color: blue;
+	font-size: 20px;
+	border:4px solid fgreen;
+	border-bottom: none;
+	background-color: #bfbfbf
+}
+#logo{
+	height: 250px;
+    width: 600px;
+    top: 150px;
+    position: relative;
+}
+#warning{
+	color:teal;
+	position: absolute;
+	left: 690px;
+	top: 140px;
+	font-size: 18px;
+}
