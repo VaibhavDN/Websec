@@ -1,5 +1,7 @@
 ## Websec - A website classification system
 
+****
+
 <img width="100%" src="https://github.com/VaibhavDN/Websec/blob/master/Flow/WebSecWorking.jpg">
 
 ****
@@ -10,7 +12,7 @@
 3. Browser extension intercepts the request and redirects it to the websec server
 4. Server receives the link and runs the web scraper on the website
 5. Scraped content is tokenized and cleaned
-6. Frequency of words are calculated and CSV file is formed
+6. Frequencies of words are calculated and CSV file is formed
 7. Users settings are retrieved to identify the blocked categories
 8. Machine learning models classify the website
 9. If website is classified under the blocked category, a blocked message is displayed to the user
